@@ -1,0 +1,22 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import S7.Nest
+public import E1.E1Load
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+#e1lits E159S19 "data/lean/ad4621f948e51009e648b193a3633b7f/E159S19.bin"
+namespace E159S19
+open BC7x
+/-- records `(path, first sub-record, sub-record count, certificate)`, BFS order of the record tree -/
+noncomputable def recs : List (List Step × Nat × Nat × Nat) := [
+([(2, true, false, [340, 94], [10], 21)], 5, 0, E159S19.L1),
+([(2, true, false, [340, 94], [10], 25)], 5, 0, E159S19.L2),
+([(2, true, false, [340, 94], [10], 29)], 5, 0, E159S19.L3),
+([(2, true, false, [340, 94], [10], 41)], 5, 0, E159S19.L4),
+([(2, true, false, [340, 94], [10], 68)], 5, 0, E159S19.L5)
+]
+noncomputable def paths : List (List Step) := recs.map Prod.fst
+/-- the main record's external subtrees are records `0 .. m0-1` -/
+def m0 : Nat := 5
+end E159S19

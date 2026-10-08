@@ -1,0 +1,32 @@
+{
+ "tiers": {
+  "II": {
+   "items": 1897923,
+   "chunks": 60200
+  },
+  "I": {
+   "items": 2444,
+   "chunks": 15
+  },
+  "I13": {
+   "items": 51592,
+   "chunks": 56
+  },
+  "l479": {
+   "items": 26625711,
+   "chunks": 3942181
+  },
+  "point": {
+   "items": 1088099,
+   "chunks": 243880
+  },
+  "raise": {
+   "items": 981329,
+   "chunks": 134692
+  }
+ },
+ "manifest_sha256": "a9abb910584e8d00b26c97841764e039fa93949d86851b29057a50442243382f",
+ "manifest": "manifest.tsv.zst",
+ "batches": 4381024,
+ "items": 30647098
+}

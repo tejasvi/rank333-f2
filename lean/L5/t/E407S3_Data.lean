@@ -1,0 +1,98 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import S7.NestT
+public import E1.E1Load
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+#e1lits E407S3 "data/lean/2ba5c13aa394b9f98fc0ad893006b810/E407S3.bin"
+namespace E407S3
+open BC7x
+/-- records `(path, sub-record count, certificate)`, BFS order of the record tree (sub-record ranges consecutive) -/
+noncomputable def recs : List (List Step × Nat × Nat) := [
+([(2, true, false, [], [], 1)], 0, E407S3.L1),
+([(2, true, false, [], [], 2)], 0, E407S3.L2),
+([(2, true, false, [], [], 4)], 0, E407S3.L3),
+([(2, true, false, [], [], 5)], 0, E407S3.L4),
+([(2, true, false, [], [], 6)], 0, E407S3.L5),
+([(2, true, false, [], [], 8)], 0, E407S3.L6),
+([(2, true, false, [], [], 12)], 0, E407S3.L7),
+([(2, true, false, [], [], 19)], 0, E407S3.L8),
+([(2, true, false, [], [], 20)], 0, E407S3.L9),
+([(2, true, false, [], [], 22)], 0, E407S3.L10),
+([(2, true, false, [], [], 23)], 0, E407S3.L11),
+([(2, true, false, [], [], 30)], 0, E407S3.L12),
+([(2, true, false, [], [], 31)], 0, E407S3.L13),
+([(2, true, false, [], [], 49)], 0, E407S3.L14),
+([(2, true, false, [], [], 50)], 0, E407S3.L15),
+([(2, true, false, [], [], 51)], 0, E407S3.L16),
+([(2, true, false, [], [], 53)], 0, E407S3.L17),
+([(2, true, false, [], [], 64)], 0, E407S3.L18),
+([(2, true, false, [], [], 69)], 0, E407S3.L19),
+([(2, true, false, [], [], 71)], 0, E407S3.L20),
+([(2, true, false, [], [], 72)], 0, E407S3.L21),
+([(2, true, false, [], [], 80)], 0, E407S3.L22),
+([(2, true, false, [], [], 81)], 0, E407S3.L23),
+([(2, true, false, [], [], 82)], 0, E407S3.L24),
+([(2, true, false, [], [], 97)], 0, E407S3.L25),
+([(2, true, false, [], [], 98)], 0, E407S3.L26),
+([(2, true, false, [], [], 99)], 0, E407S3.L27),
+([(2, true, false, [], [], 100)], 0, E407S3.L28),
+([(2, true, false, [], [], 102)], 0, E407S3.L29),
+([(2, true, false, [], [], 104)], 0, E407S3.L30),
+([(2, true, false, [], [], 106)], 0, E407S3.L31),
+([(2, true, false, [], [], 112)], 0, E407S3.L32),
+([(2, true, false, [], [], 113)], 0, E407S3.L33),
+([(2, true, false, [], [], 115)], 0, E407S3.L34),
+([(2, true, false, [], [], 118)], 0, E407S3.L35),
+([(2, true, false, [], [], 149)], 0, E407S3.L36),
+([(2, true, false, [], [], 170)], 0, E407S3.L37),
+([(2, true, false, [], [], 173)], 0, E407S3.L38),
+([(2, true, false, [], [], 186)], 0, E407S3.L39),
+([(2, true, false, [], [], 191)], 0, E407S3.L40),
+([(2, true, false, [], [], 281)], 0, E407S3.L41),
+([(2, true, false, [], [], 373)], 0, E407S3.L42),
+([(2, true, false, [], [], 376)], 0, E407S3.L43),
+([(2, true, false, [], [], 377)], 0, E407S3.L44),
+([(2, true, false, [], [], 595)], 0, E407S3.L45),
+([(2, true, false, [], [], 597)], 0, E407S3.L46),
+([(2, true, false, [], [], 599)], 0, E407S3.L47),
+([(2, true, false, [], [], 601)], 0, E407S3.L48),
+([(2, true, false, [], [], 609)], 0, E407S3.L49),
+([(2, true, false, [], [], 612)], 0, E407S3.L50),
+([(2, true, false, [], [], 614)], 0, E407S3.L51),
+([(2, true, false, [], [], 628)], 0, E407S3.L52),
+([(2, true, false, [], [], 644)], 0, E407S3.L53),
+([(2, true, false, [], [], 645)], 0, E407S3.L54),
+([(2, true, false, [], [], 646)], 0, E407S3.L55),
+([(2, true, false, [], [], 648)], 0, E407S3.L56),
+([(2, true, false, [], [], 649)], 0, E407S3.L57),
+([(2, true, false, [], [], 650)], 0, E407S3.L58),
+([(2, true, false, [], [], 652)], 0, E407S3.L59),
+([(2, true, false, [], [], 656)], 0, E407S3.L60),
+([(2, true, false, [], [], 663)], 0, E407S3.L61),
+([(2, true, false, [], [], 666)], 0, E407S3.L62),
+([(2, true, false, [], [], 667)], 0, E407S3.L63),
+([(2, true, false, [], [], 673)], 0, E407S3.L64),
+([(2, true, false, [], [], 677)], 0, E407S3.L65),
+([(2, true, false, [], [], 695)], 0, E407S3.L66),
+([(2, true, false, [], [], 697)], 0, E407S3.L67),
+([(2, true, false, [], [], 708)], 0, E407S3.L68),
+([(2, true, false, [], [], 710)], 0, E407S3.L69),
+([(2, true, false, [], [], 719)], 0, E407S3.L70),
+([(2, true, false, [], [], 732)], 0, E407S3.L71),
+([(2, true, false, [], [], 737)], 0, E407S3.L72),
+([(2, true, false, [], [], 740)], 0, E407S3.L73),
+([(2, true, false, [], [], 746)], 0, E407S3.L74),
+([(2, true, false, [], [], 1045)], 0, E407S3.L75),
+([(2, true, false, [], [], 1048)], 0, E407S3.L76),
+([(2, true, false, [], [], 1049)], 0, E407S3.L77),
+([(2, true, false, [], [], 1069)], 0, E407S3.L78),
+([(2, true, false, [], [], 1105)], 0, E407S3.L79),
+([(2, true, false, [], [], 1395)], 0, E407S3.L80),
+([(2, true, false, [], [], 1455)], 0, E407S3.L81)
+]
+noncomputable def paths : List (List Step) := recs.map Prod.fst
+/-- the main record's external subtrees are records `0 .. m0-1` -/
+def m0 : Nat := 81
+end E407S3

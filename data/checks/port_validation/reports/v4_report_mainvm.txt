@@ -1,0 +1,11 @@
+V4 PASS: 7/7 tests behave as expected in both worlds (accepts stay accepts, rejects stay rejects, same errors)
+
+| test | expected | old rc | new rc | old s | new s | errors | note |
+|---|---|---|---|---|---|---|---|
+| KX_neg_clean | accept | 0 | 0 | 12 | 12 | same:  | kinds #kdxnode control: clean input, accepted |
+| KX_neg_crow | reject | 1 | 1 | 13 | 13 | same: xc#_#: kernel rejects: (kernel) declaration type mismatch, 'xc#_#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_cz1 | reject | 1 | 1 | 14 | 12 | same: xn#: kernel rejects: (kernel) declaration type mismatch, 'xn#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_cz2 | reject | 1 | 1 | 15 | 12 | same: xn#: kernel rejects: (kernel) declaration type mismatch, 'xn#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_fu | reject | 1 | 1 | 10 | 10 | same: xc#_#: kernel rejects: (kernel) declaration type mismatch, 'xc#_#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_nrow | reject | 1 | 1 | 11 | 11 | same: xn#: kernel rejects: (kernel) declaration type mismatch, 'xn#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_step | reject | 1 | 1 | 10 | 10 | same: xc#_#: kernel rejects: (kernel) declaration type mismatch, 'xc#_#' has type | kinds #kdxnode control: corrupted input, kernel rejects |

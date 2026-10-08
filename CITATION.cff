@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper."
+title: "Programs, data and Lean formalization for the rank of 3x3 matrix multiplication over F2"
+authors:
+  - family-names: Tomar
+    given-names: Tejasvi Singh
+    affiliation: Independent researcher
+    orcid: "https://orcid.org/0000-0003-4668-3639"
+version: v1.0
+doi: 10.5281/zenodo.23236154
+license: Apache-2.0
+repository-code: "https://github.com/tejasvi/rank333-f2"
+preferred-citation:
+  type: article
+  title: "The rank of 3x3 matrix multiplication over F2 is 23"
+  authors:
+    - family-names: Tomar
+      given-names: Tejasvi Singh
+  doi: 10.5281/zenodo.23236158
+  year: 2026

@@ -1,0 +1,92 @@
+{
+ "snapshot_utc": "2026-10-08 06:54:17",
+ "manifest_full_md5": "7c5a67484a5335c4d4c4b5b69ac3ddb1",
+ "manifest_full_files": 315565,
+ "toolchain": "leanprover/lean4:v4.30.0",
+ "mathlib": {
+  "tag": "v4.30.0",
+  "commit": "c5ea00351c28e24afc9f0f84379aa41082b1188f"
+ },
+ "tree": {
+  "nonmodule_files_closure": 43912,
+  "nonmodule_files_v4_only": 174,
+  "module_files_ours": 116,
+  "build_traces": 44314
+ },
+ "final_closure": {
+  "port_modules": 43888,
+  "ported": 43675,
+  "module_files": 108,
+  "umbrellas": 105,
+  "glue_modules_imported_directly": 54
+ },
+ "v1": {
+  "failures": 0
+ },
+ "v2": {
+  "modules_compared": 44137,
+  "user_level_constants": 2062872,
+  "equal": 2062866,
+  "equal_up_to_proofs": 8,
+  "expected_differences": 6,
+  "missing": 0,
+  "added": 0,
+  "types_differ": 0,
+  "loader_definitions": 1309231,
+  "loader_modules": 6225,
+  "loader_differ": 0,
+  "not_applicable_source_only_modules": 25,
+  "not_applicable_source_only_constants": 1689,
+  "not_applicable_glue_importing_modules": 30
+ },
+ "v3": {
+  "user_level_declarations": 2062954,
+  "differ": 0,
+  "missing": 0,
+  "roots": 2756,
+  "roots_bad": 0,
+  "native_decide_axioms": 23,
+  "native_decide_users": 55,
+  "outside_allowed": 0
+ },
+ "v4": {
+  "tests": 18,
+  "as_expected": 18
+ },
+ "p2_chain": {
+  "constants_exported": 28350,
+  "of_port_modules": 26044,
+  "types_differ": 0,
+  "port_defs_without_value": 0,
+  "vs_original_constants": 27505,
+  "vs_original_types_differ": 0,
+  "vs_original_values_differ_only_in_proofs": 2,
+  "final_chain_constants": 3435,
+  "final_chain_shared": 3009,
+  "final_chain_types_differ": 0
+ },
+ "ckr": {
+  "libraries": [
+   "e07b8136b3c8",
+   "6fae2d2db094",
+   "6d6541a6a2c0",
+   "800f4b8cdcce",
+   "907071015dc3"
+  ],
+  "differ": 0,
+  "frozen_l479_files": 288,
+  "libnative_md5": "b5f426018105320e4e9e48b77132a9e8"
+ },
+ "v5": {
+  "theorem": "R22B.rank_ge_23",
+  "axioms": 4381050,
+  "standard": 3,
+  "chunk_axioms": 4381024,
+  "ndbool": 23,
+  "deviations": 0,
+  "checker_pair_recorded": 4193446,
+  "checker_pair_derived_t6": 187578,
+  "missing_or_not_allowed": 0,
+  "rerun_utc": "2026-10-08 08:28-08:47"
+ }
+}

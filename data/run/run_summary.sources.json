@@ -1,0 +1,30 @@
+{
+ "axioms": "r22/lean/native/infra/port/out/val/v5_R22B.rank_ge_23.ax",
+ "stores": {
+  "II": [
+   "run/used/II"
+  ],
+  "I": [
+   "run/used/I"
+  ],
+  "I13": [
+   "run/used/I13"
+  ],
+  "l479": [
+   "run/used/l479x",
+   "run/used/l479"
+  ],
+  "point": [
+   "run/used/point"
+  ],
+  "raise": [
+   "run/used/cls",
+   "run/used/e303",
+   "run/used/e321"
+  ]
+ },
+ "counts": {
+  "rehearsal": "native/infra/README.md, reh/log_r4*, reh/keys_h15",
+  "kernel_roots": "native/node/NNP/Root462.lean md5 ad1341bc91b359b567cec695939ceb6b"
+ }
+}

@@ -1,0 +1,32 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import E1.C395X_W
+@[expose] public section
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+namespace E1.C395X
+open E1S
+theorem okB290 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 1 = true := by decide +kernel
+theorem okB291 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 291 1 = true := by decide +kernel
+theorem okB292 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 292 1 = true := by decide +kernel
+theorem okB293 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 293 1 = true := by decide +kernel
+theorem okB294 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 294 1 = true := by decide +kernel
+theorem okB295 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 295 1 = true := by decide +kernel
+theorem okB296 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 296 1 = true := by decide +kernel
+theorem okB297 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 297 1 = true := by decide +kernel
+theorem okB298 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 298 1 = true := by decide +kernel
+theorem okB299 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 299 1 = true := by decide +kernel
+theorem okG26 : glueChkR lits W 290 10 = true := by decide +kernel
+theorem okM26 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 10 = true := by
+  have h0 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 1 = true := okB290
+  have h1 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 2 = true := blkChk_join _ _ _ _ _ 290 1 1 h0 okB291
+  have h2 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 3 = true := blkChk_join _ _ _ _ _ 290 2 1 h1 okB292
+  have h3 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 4 = true := blkChk_join _ _ _ _ _ 290 3 1 h2 okB293
+  have h4 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 5 = true := blkChk_join _ _ _ _ _ 290 4 1 h3 okB294
+  have h5 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 6 = true := blkChk_join _ _ _ _ _ 290 5 1 h4 okB295
+  have h6 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 7 = true := blkChk_join _ _ _ _ _ 290 6 1 h5 okB296
+  have h7 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 8 = true := blkChk_join _ _ _ _ _ 290 7 1 h6 okB297
+  have h8 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 9 = true := blkChk_join _ _ _ _ _ 290 8 1 h7 okB298
+  have h9 : blkChk E1.IP_e395.C E1.SL_e395.entry E1.IP_e395.UB E1.IP_e395.UBR lits 290 10 = true := blkChk_join _ _ _ _ _ 290 9 1 h8 okB299
+  exact h9
+end E1.C395X

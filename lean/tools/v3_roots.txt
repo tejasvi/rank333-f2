@@ -1,0 +1,31 @@
+# V3 root list (PROOF_OBJECT.md §10.3): `module <TAB> name`. A name is exact if it exists, else the unique constant of that
+# module whose name ends with `.name`. val.py adds every `#print axioms X` target of the snapshot's sources.
+Top.Top	Top.rank_ge_23_skeleton
+KD.XBatchO	KD.batchX_sound
+KD.XBatchO	KD.batchXO_sound
+KD.Tree	KD.tree_sound
+KD.Tree	KD.caseII_empty
+Top.Root	Top.root_caseII
+Top.Root321	Top321.root_321
+E1P.Compose	E1PS.e1_sound_ext
+E1P.Bridge3	e1_sound
+E1.Bridge3	E1S.e1_sound
+E1.Compose	E1S.e1_sound_ext
+E1G.Compose	E1GS.e1_sound_ext
+HC.Tables	HC.hclsN_K3eD_Cls_final
+HC.Final	HC.hclsN_K3eD_final
+S7.Leaf7	S7.batch7_sound
+S7.Leaf7	S7.leafS7_sound
+S7.Check7	S7.checkS7_sound
+S7.Split	checkSX_sound
+S7.Split	leafSplit_sound
+S7.Nest	nestSplit_sound'
+S7.NestT	nestSplitT_sound'
+S7.SplitAsm	leafSplit_sound'
+R22B.Segs	R22B.segs_of_cov
+R22B.Segs	R22B.segs_of_covH
+R22B.Segs	R22B.segs_of_covH_roots
+R22B.Final	R22B.final_generic
+E1P.J433	no_start
+E1P.J433K	no_start
+E1P.J582K	no_start

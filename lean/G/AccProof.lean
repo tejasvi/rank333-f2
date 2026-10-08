@@ -1,0 +1,60 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import G.R3.D2O00.Asm
+public import G.R3.D2O01.Asm
+public import G.R3.D2O02.Asm
+public import G.R3.D2O03.Asm
+public import G.R3.D2O04.Asm
+public import G.R3.D2O05.Asm
+public import G.R3.D2O06.Asm
+public import G.R3.D2O07.Asm
+public import G.R3.D2O08.Asm
+public import G.R3.D2O09.Asm
+public import G.R3.D2O10.Asm
+public import G.R3.D2O11.Asm
+public import G.R3.D2O12.Asm
+public import G.R3.D2O13.Asm
+public import G.R3.D2O14.Asm
+public import G.R3.D2O15.Asm
+public import G.R3.D2O16.Asm
+public import G.R3.D2O17.Asm
+public import G.R3.D2O18.Asm
+public import G.R3.D2O19.Asm
+public import G.R3.D2O20.Asm
+public import G.R3.D2O21.Asm
+public import G.R3.D2O22.Asm
+public import G.R3.D2O23.Asm
+public import G.R3.D2O24.Asm
+public import G.R3.D2O25.Asm
+public import G.R3.D2O26.Asm
+public import G.R3.D2O27.Asm
+public import G.R3.D2O28.Asm
+public import G.R3.D2O29.Asm
+public import G.R3.D2O30.Asm
+public import G.R3.D2O31.Asm
+public import G.R3.D2O32.Asm
+public import G.R3.D2O33.Asm
+public import G.R3.D2O34.Asm
+public import G.R3.D2O35.Asm
+public import G.R3.D1O00.Asm
+public import G.R3.D1O01.Asm
+public import G.R3.D1O02.Asm
+public import G.R3.D1O03.Asm
+public import G.R3.D1O04.Asm
+public import G.R3.D1O05.Asm
+public import G.R3.D1O06.Asm
+public import G.R3.D0O00.Asm
+public import G.R3.D0O01.Asm
+public import G.R3.D0O02.Asm
+public import G.R3.D0O03.Asm
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+#accType G.accept_d2 G.Acc.Accept_d2 R3D2O00.accV R3D2O01.accV R3D2O02.accV R3D2O03.accV R3D2O04.accV R3D2O05.accV R3D2O06.accV R3D2O07.accV R3D2O08.accV R3D2O09.accV R3D2O10.accV R3D2O11.accV R3D2O12.accV R3D2O13.accV R3D2O14.accV R3D2O15.accV R3D2O16.accV R3D2O17.accV R3D2O18.accV R3D2O19.accV R3D2O20.accV R3D2O21.accV R3D2O22.accV R3D2O23.accV R3D2O24.accV R3D2O25.accV R3D2O26.accV R3D2O27.accV R3D2O28.accV R3D2O29.accV R3D2O30.accV R3D2O31.accV R3D2O32.accV R3D2O33.accV R3D2O34.accV R3D2O35.accV
+#accType G.accept_d1V G.Acc.Accept_d1V R3D1O00.accV R3D1O01.accV R3D1O02.accV R3D1O03.accV R3D1O04.accV R3D1O05.accV R3D1O06.accV
+#accType G.accept_d1S G.Acc.Accept_d1S R3D1O00.accS R3D1O01.accS R3D1O02.accS R3D1O03.accS R3D1O04.accS R3D1O05.accS R3D1O06.accS
+#accType G.accept_d0S G.Acc.Accept_d0S R3D0O00.accS R3D0O01.accS R3D0O02.accS R3D0O03.accS
+#print axioms G.accept_d2
+#print axioms G.accept_d1V
+#print axioms G.accept_d1S
+#print axioms G.accept_d0S

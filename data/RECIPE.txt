@@ -1,0 +1,156 @@
+# RECIPE.txt: the authoritative prof7R3 option line for the certificate rerun of the main search (case II, poolH-style jobs).
+# Owner: the R3 agent (r22/lean/rerun/r3). Queue run scripts read the FLAGS line (one line, absolute paths, options in this order).
+# Status: batch 14, 2026-10-07 06:00 UTC: case II on the L479 table (FLAGS; FLAGS_NATIVE for the native track), cases I / I13 on C3eD
+# under --rord 321 (FLAGS_I, FLAGS_I13; FLAGS_I_NATIVE, FLAGS_I13_NATIVE), phase 0 (PHASE0).
+# Changes come only as new batches, announced here and in r3/QUEUE.md.
+FLAGS --r 22 --mult1 --table data/tables/tab_C3eD479.bin --mis 4 21 --lp 99 99 --lpinc --lpobjb --lppool 1500 --lpkeepstop 1.0 --lpkept data/tables/kept_C3eD479c4d.txt --mispre 500 --preff --nocntcanon --collectmis --nowlook --vskip --vskiplast --rord 123 --minr1 14 --r2screen --donate_depth 17 --agedonate 60 --pfd 32 --dmis 10 21 --dmisc --dmis2 --dp2 --crow 14 20 16000 --crowbits --crowkmin 16 --rootcut --flook 17 --fdef --typecut 95 --nosplit --pcvcut --pcleafx --pcxp data/tables/C3eDII.c2t data/tables/kept3eDII_lab.bin --xpminbb 1 --xplim 4000 --pcexp5 1000 --pcnorep --xp2 --xp2agg 2 --xp2cut 2 --xp2psteps 2
+FLAGS_I --r 22 --mult1 --table data/tables/tab_C3eD.bin --mis 4 20 --lp 99 99 --lpinc --lpobjb --lppool 1500 --lpkeepstop 1.0 --lpkept data/tables/kept_C3eDc4d.txt --preff --nocntcanon --collectmis --nowlook --vskip --vskiplast --dmis 10 20 --dmisc --dmis2 --dp2 --crow 14 17 16000 --crowbits --crowkmin 16 --rootcut --nosplit --r2screen --agedonate 60 --pfd 32 --mispre 2000 --rord 321 --maxr1 12 --donate_depth 16 --pcvcut --pcleafx --pcxp data/tables/C3eD_321.c2t data/tables/kept3eD_lab321.bin --xpminbb 1 --xplim 4000 --pcexp5 1000 --pcnorep --xp2 --xp2agg 2 --xp2cut 2 --xp2psteps 2
+FLAGS_I13 --r 22 --mult1 --table data/tables/tab_C3eD.bin --mis 4 20 --lp 99 99 --lpinc --lpobjb --lppool 1500 --lpkeepstop 1.0 --lpkept data/tables/kept_C3eDc4d.txt --preff --nocntcanon --collectmis --nowlook --vskip --vskiplast --dmis 10 20 --dmisc --dmis2 --dp2 --crow 14 17 16000 --crowbits --crowkmin 16 --rootcut --nosplit --r2screen --agedonate 60 --pfd 32 --mispre 2000 --rord 321 --minr1 13 --maxr1 13 --donate_depth 16 --pcvcut --pcleafx --pcxp data/tables/C3eD_321.c2t data/tables/kept3eD_lab321.bin --xpminbb 1 --xplim 4000 --pcexp5 1000 --pcnorep --xp2 --xp2agg 2 --xp2cut 2 --xp2psteps 2
+FLAGS_NATIVE --r 22 --mult1 --table data/tables/tab_C3eD479.bin --mis 4 21 --lp 99 99 --lpinc --lpobjb --lppool 1500 --lpkeepstop 1.0 --lpkept data/tables/kept_C3eD479c4d.txt --mispre 500 --preff --nocntcanon --collectmis --nowlook --vskip --vskiplast --rord 123 --minr1 14 --r2screen --donate_depth 17 --agedonate 60 --pfd 32 --dmis 10 21 --dmisc --dmis2 --dp2 --crow 14 20 16000 --crowbits --crowkmin 16 --rootcut --flook 17 --fdef --typecut 95 --nosplit --pcvcut --pcleafx --pcxp data/tables/C3eDII.c2t data/tables/kept3eDII_lab.bin --xpminbb 1 --xplim 4000 --pcexp5 1000 --pcnorep --xp2 --xp2agg 2 --xp2cut 2 --xp2psteps 2 --xpvar --xp2prune 0 --xp2exprune 0 --xp2psteps 0 --pcwit --leafv7 --xp2verify 1000
+FLAGS_I_NATIVE --r 22 --mult1 --table data/tables/tab_C3eD.bin --mis 4 20 --lp 99 99 --lpinc --lpobjb --lppool 1500 --lpkeepstop 1.0 --lpkept data/tables/kept_C3eDc4d.txt --preff --nocntcanon --collectmis --nowlook --vskip --vskiplast --dmis 10 20 --dmisc --dmis2 --dp2 --crow 14 17 16000 --crowbits --crowkmin 16 --rootcut --nosplit --r2screen --agedonate 60 --pfd 32 --mispre 2000 --rord 321 --maxr1 12 --donate_depth 16 --pcvcut --pcleafx --pcxp data/tables/C3eD_321.c2t data/tables/kept3eD_lab321.bin --xpminbb 1 --xplim 4000 --pcexp5 1000 --pcnorep --xp2 --xp2agg 2 --xp2cut 2 --xp2psteps 2 --xpvar --xp2prune 0 --xp2exprune 0 --xp2psteps 0 --pcwit --leafv7 --xp2verify 1000
+FLAGS_I13_NATIVE --r 22 --mult1 --table data/tables/tab_C3eD.bin --mis 4 20 --lp 99 99 --lpinc --lpobjb --lppool 1500 --lpkeepstop 1.0 --lpkept data/tables/kept_C3eDc4d.txt --preff --nocntcanon --collectmis --nowlook --vskip --vskiplast --dmis 10 20 --dmisc --dmis2 --dp2 --crow 14 17 16000 --crowbits --crowkmin 16 --rootcut --nosplit --r2screen --agedonate 60 --pfd 32 --mispre 2000 --rord 321 --minr1 13 --maxr1 13 --donate_depth 16 --pcvcut --pcleafx --pcxp data/tables/C3eD_321.c2t data/tables/kept3eD_lab321.bin --xpminbb 1 --xplim 4000 --pcexp5 1000 --pcnorep --xp2 --xp2agg 2 --xp2cut 2 --xp2psteps 2 --xpvar --xp2prune 0 --xp2exprune 0 --xp2psteps 0 --pcwit --leafv7 --xp2verify 1000
+JOBS_I --frontier 1 --frontierfile data/tables/frontier_d1_321.txt
+JOBS_I13 --frontier 1 --frontierfile data/tables/frontier_d1_321.txt
+PHASE0 case II only: <FLAGS> --pctop F PFILE --pcert FILE --dumpfrontier DUMP --threads 1 (QUEUE.md §8: one kind-4 segment per PFILE line, JOB records at depth F; jobs = DUMP)
+PHASE0_NATIVE case II only: <FLAGS_NATIVE> --pctop F PFILE --pcert FILE --dumpfrontier DUMP --threads 1 (PHASE0 for the native checkers: varint blobs, witness lists, inline v7 leaves; the same records and DUMPs as PHASE0). Batch-10 run: r3/p0/b10n/ (61 batches from b10's PFILEs, prof7R3k14c; DUMPs byte-identical to b10's)
+# JOBS_*: the job source of FLAGS_I / FLAGS_I13 and of FLAGS_I_NATIVE / FLAGS_I13_NATIVE: the 3 depth-1 nodes (the first label of each rank class), jobs 0, 1, 2
+ENV none: the xp2 parameters other than agg / cut / pruneSteps (set by --xp2agg / --xp2cut / --xp2psteps) are kill2's defaults, so P2_* and XP_LIM must be unset (the fingerprint mixes the effective values)
+BINARY r22/lean/rerun/r3/prof7R3k14c md5 f63450e30ae3636f3460abe247bd48d8, from prof7R3.cc 0e4cb3965a8c3e867f432fe2291e7e77 (batch 14; frozen copy r3/prof7R3_b14.cc), r3/g7/gen7.h 1b9fb801d5cd87956de797b93e3b7702 (native/leaf's gen7fast drop-in, the same v7 certificates bit for bit as hcls's b4710df6633b = r3/g7/gen7_b13.h; header-only), r3/xp2/xpeel.h 8fd1125cb96af5fc5541e4ab3b3dd051, xpeel.cc e0c9f1e8b1f8ab97857cdaf8a78a1efa, xpeel2.h 59588b3d0e4c2f266d462fdeb387cd90, xpeel2.cc 3c0dcfe68d88ee682e7a5104509c9f15 (kill2's generator with the budget cut, pinned; batch 5-8 pins in r3/xp2/b5), r3farkas.h 6c65e465b1109c33bab3ad1a1f9dd4d9. The *_NATIVE lines need prof7R3k14c (k13 runs them without --xp2verify, with identical streams). For every other line prof7R3k10 (aa83fc96b1f1, prof7R3_b9.cc) and k11-k13 are equivalent: same fingerprint, canonical streams identical (jobsA and 15089 under FLAGS, 40 depth-5 jobs under FLAGS_I, level A of PHASE0)
+BUILD (in r3/) HL=$(ls -d ~/mm3/venv/lib/python3*/site-packages/highspy | head -1); g++ -O3 -march=native -std=c++17 -c xp2/xpeel.cc -o xpeel.o; g++ -O3 -march=native -std=c++17 -Ixp2 -c xp2/xpeel2.cc -o xpeel2.o; g++ -O3 -march=native -std=c++17 -pthread -I<work>/cpp -Ixp2 -I. prof7R3.cc xpeel.o xpeel2.o -o prof7R3k14c -L$HL -l:libhighs.so.1 -Wl,-rpath,$HL  (fleet: -march=x86-64-v4 or znver4 for mixed Intel/AMD; re-run the determinism test on the fleet build)
+READER r3cat.cc 6e402f165daeec02ff6cb4c7aa624a32 (frozen copy r3/r3cat_b13.cc), r3rec.h 57806a99b5e87ac27646619c19ebf854 (frozen copy r3/r3rec_b13.h; batch 13: under #leafv7 1 a LEAF of code 0 is followed by varint nbits and ceil(nbits/8) bytes; batch 12: r3cat parses #pcwit headers and has `wit`; md5 unchanged for older streams; binary r3cat_k13)
+CONVERTER kill2/p5/r3c2.py with R3C2_NOB=1 (hybrid records, budget-cut leaves) -> K2C.batchC4X, or the kinds agent's KD.batchX with childL4X. FLAGS_NATIVE streams (#xpvar 1) are for the native track's reader; the kernel converters read FLAGS streams
+DATA sha256 data/tables/tab_C3eD479.bin db7dd4400d7fa25301ffa51ed5bd6f0507a799ac330ad4262c366cd9cc840152 (case II: C3eD with class 479 at lb 21; = math2's /dev/shm/m2/tab_o479.bin)
+DATA sha256 data/tables/kept_C3eD479c4d.txt 9794ea0acd87418edc049ac5bcabed9ab65c956ecf82a65cbad157827f066b77 (case II: kept_C3eDc4d.txt + the 441 class-479 lines at cap 1, ids 3781613..3782053; = /dev/shm/m2/kept_o479r.txt)
+DATA sha256 data/tables/C3eDII.c2t 66f7051f7091ec9f1e266ac86a1ba32cb0c25729c0726b517190e14ee985224b (case II; rt479/mkII.py)
+DATA sha256 data/tables/kept3eDII_lab.bin 89b27d033ca29028b6f7d1457ea98ae651de277e4a0a8a8282ad6ae005c43609 (case II; = the leaf/RT agent's K3eD + K3eD479 label masks)
+DATA sha256 data/tables/tab_C3eD.bin 349056a0ea869130d63d33cb4604f8e25d599c3623f0cf166a3926d3ae0b54f8 (cases I / I13)
+DATA sha256 data/tables/kept_C3eDc4d.txt e424ea8d5c8f79bed17d90cba330339459fa9d4540e6e875db5b28e3188e51b1 (cases I / I13)
+DATA sha256 r22/lean/rerun/r3/rt/C3eD.c2t 42c61558830732fc986956e04fd7eebe7d5adf6daf4a7aeee4b1b14fdcafeb99 (batches 2-9 case II; not used by batch 10)
+DATA sha256 r22/lean/leaf2/rt/kept3eD_lab.bin 6156e8944e1a656b144088fa767ce863023f709d61ec70ccf3623b4e51ccf8fa (batches 2-9 case II; not used by batch 10)
+DATA sha256 data/tables/C3eD_321.c2t ce58f10147b5bbb3dc427bba0f16220a882b231efe59b14d05fa050ad97a5049 (cases I / I13)
+DATA sha256 data/tables/kept3eD_lab321.bin f55cb1a4a35d8a07cead69d5bef87dd0ec47ccb34b0d5c78c0ebe193c72443f3 (= leaf2/rt/kept3eD_lab321.bin)
+DATA sha256 data/tables/frontier_d1_321.txt 4d41cbf5bd407d75b5b00ab377cdd42c445b82ae69b190f495150de0378479c0
+#
+# Per run, not in FLAGS: the job source (poolH: --frontier 11 --frontierfile r22/caseII/poolH/poolH_d11.txt; or the queue's items),
+#   --threads, --jobsfile, --state, --out, --pcert FILE. --donate_depth, --agedonate and --pfd are scheduling options (not in the
+#   search fingerprint); the queue may override them. Every host must use the same data paths: the fingerprint mixes the path strings.
+# Cases I / I13 (gap G5): FLAGS_I / FLAGS_I13 = runpart.sh's pool X / Y options minus Lemma W, plus --nosplit --r2screen (--pcert needs
+#   it) and the certificate options with the 321 tables (r3/rt321/, made by mk321.py; checked against the kept rows at startup).
+#   No --typecut (prof7's type test assumes rank-1 labels first) and no L86 cuts. Jobs are the 3 depth-1 nodes, so no phase-0
+#   collection is needed: the nodes above them are the root alone (top/GAPS.md G5). Counts (depth-5 frontier runs, no certificates):
+#   case I 623,014 nodes, 20,880 leaves, 3,580 profiles; I13 19,540,959 nodes, 939,185 leaves, 146,319 profiles.
+#
+# pcexp5 = 1000 (crow kills with bb > 1000 are expanded, the rest peeled). Measured on job 15089 with this binary (R3.md 5.14):
+#   - generation: 635 / 631 / 706 s user CPU at --pcexp5 560 / 1000 / 0; xpeel2 makes the peel as cheap as the expansion.
+#   - kernel (kill2's hybrid checker, records that differ, paired by node key): peeling the 561-1000 band instead of expanding it
+#     saves ~190 s of kernel per job, and ~2,800 s with the loader's build phase (6,538 fewer records).
+#   - peeling above 1000 would save more CPU still, but the 349 node records that then hold those crows need 20-40 GB RSS each and
+#     some exceed a 60 GB address-space cap: one declaration per node cannot take them. So 1000, not 0.
+#   - 560 was kill2's crossover for the 27.11 format against an old 66 ms expansion price; 79 was kill2's first rule.
+# xp2: yes. kill2's xpeel2 (--xp2, hybrid format --xp2agg 2) replaces the batch-4 generator (--pcxp alone): generation on 15089 drops
+#   from 2,534 to 631 s; F_u is derived from the node matrix (no exclusion lists in X records) and bound by K2C.fuOK. --pcxp stays in
+#   FLAGS: it loads the static tables both generators use, and node cuts 5/6 keep the 27.11-format certificate of batch 2.
+#
+# Changelog, newest first:
+# 2026-10-07 07:45 UTC, batch 14 addendum (no binary or flag change): new line PHASE0_NATIVE = FLAGS_NATIVE + --pctop. The 61 phase-0
+#   batches were regenerated with it from b10's PFILEs on prof7R3k14c (r3/p0/b10n/, 1.4 GB, md5s in b10n/MD5SUMS.txt): every DUMP is
+#   byte-identical to b10's (so plan1 is unchanged), the record counts per tag are equal in all 61, every segment carries #xpvar 1,
+#   #pcwit 1 and #leafv7 1, and r3cat_k13 parses all of them.
+# 2026-10-07 06:00 UTC, batch 14 (prof7R3.cc 0e4cb3965a8c, binary prof7R3k14c; readers unchanged from batch 13): generation speed, streams
+#   unchanged. (a) The xp2 node contexts deduplicate their rows through per-thread bitmaps and take label masks from the --pcxp label file
+#   (checked against the kept rows for every row at startup, prefetched): row gathering 1.83 -> 0.93 ms per context. (b) --xp2verify N:
+#   xp2 self-verifies the certificates of one node context in N (a hash of the prefix; the native checkers verify everything); FLAGS_NATIVE
+#   gains --xp2verify 1000. (c) The v7 leaf generator is native/leaf's gen7fast drop-in (bit-identical; H4: 11.1 -> 1.15 ms per leaf).
+#   New lines FLAGS_I_NATIVE / FLAGS_I13_NATIVE = FLAGS_I / FLAGS_I13 + FLAGS_NATIVE's suffix (--xpvar --xp2prune 0 --xp2exprune 0
+#   --xp2psteps 0 --pcwit --leafv7 --xp2verify 1000) with JOBS_I / JOBS_I13 (for the native node agent's order-generic checkers). Tests:
+#   k14c with FLAGS = k13 (jobsA); FLAGS_NATIVE: canonical streams = batch 13's at 4, 8, 16 threads (jobsA) and on H4 (uninterrupted, SIGTERM
+#   90 s, kill -9 110 s), v7 records = gen7c's (203); FLAGS_I_NATIVE / FLAGS_I13_NATIVE (case I jobs 0-2, I13 job 1): state lines = FLAGS_I /
+#   FLAGS_I13's, canonical streams equal at 16 and 8 threads, resume (SIGTERM 60 s, kill -9 80 s on case I jobs 0-1) identical, every
+#   header witness and v7 record checked; k14c = k13 on them. CPU on H6 job 2887 (518k stream nodes, 32 threads): -13% (k13 4,598 s,
+#   k14c 3,985 s). One FLAGS_NATIVE process per c4d box: 192 threads (one per core); 384 threads ran 12% slower (hpc-workloads18).
+# 2026-10-07 04:30 UTC, batch 13 (prof7R3.cc b6378bdb0506, binary prof7R3k13; r3rec.h 57806a99b5e8, r3cat.cc 6e402f165dae, r3cat_k13): FLAGS_NATIVE
+#   gains --leafv7 (coordinator's decision; layout agreed with the native node and leaf agents). Every profile leaf (LEAF 0) carries
+#   the v7 leaf record R of BC7s.leafS: [6] n = 22, 22 x [9] codes (increasing labels, the order given to gen7), [1] dm = 0, [1] lg = 1,
+#   then g7::enc_cert's bits (none when the rank sum is < 27), written as varint nbits + ceil(nbits/8) bytes, little-endian bits, zero
+#   padding (header #leafv7 1). Generator: hcls/E1P's gen7.h, pinned in r3/g7 (K 4, maxnodes 300000, deadk 6, lg on the full domain; fit
+#   fallback after a field overflow; Big retried at 2e6, then 2e7 calls; SAT aborts with exit 9), all in the fingerprint. Tests: k13 with
+#   FLAGS = k12 (jobsA); FLAGS_NATIVE + --leafv7: search identical, canonical streams identical at 4, 8, 16 threads (jobsA), resume on H4
+#   (SIGTERM 90 s, kill -9 110 s) identical; every record of 15089 (4) and H4 (203) has the layout above and a certificate identical to
+#   gen7c's (exp/v7chk.py); the encoding reproduces the leaf agent's 420 kernel-accepted main-search records byte for byte (g7/v7vec.cc).
+#   Cost on H4: 11.1 ms per leaf (max 122 ms), 356 bits per leaf.
+# 2026-10-07 02:55 UTC, batch 12 (prof7R3.cc 0021fc535286, binary prof7R3k12; r3cat.cc a35ba8f4cafd, r3cat_k12): FLAGS_NATIVE gains
+#   --pcwit, for the native checkers' self-contained items. With --pcwit (header "#pcwit 1") every segment header carries, after the
+#   64-byte dead mask D: varint n, n x varint row-id delta (ascending) = the VROWS rows cited at the donor node and at its ancestors in
+#   the job. Their label masks' union is exactly D, and each is full at the piece root's parent prefix. n = 0 for kinds 0, 2, 4. A piece
+#   carries the list as it carries D (Job.win). Records and canonical streams are unchanged. Tests: k12 with FLAGS = k11 (jobsA); FLAGS_NATIVE
+#   + --pcwit: search identical, canonical streams = FLAGS_NATIVE's at 4, 8, 16 threads; resume on H4 (SIGTERM 90 s, kill -9 110 s)
+#   identical; every header witness equals r3cat_k12's recomputation from the assembled stream (jobsA 168 pieces, H4 3,799 pieces in
+#   the three runs); D = the union of the witness rows' masks and every row is full at S0 (1,853 pieces of 15089 and H4, checked
+#   against kept_C3eD479c4d.txt). Overhead: 115 bytes per piece header on average (108 rows; max 175 bytes).
+# 2026-10-07 02:30 UTC, batch 11 (prof7R3.cc fe6b63abcb42, binary prof7R3k11; r3cat.cc b035355f6303, r3cat_k11): new line FLAGS_NATIVE
+#   for the native track = FLAGS + --xpvar --xp2prune 0 --xp2exprune 0 --xp2psteps 0 (use it verbatim: the fingerprint mixes every token).
+#   --xpvar (header "#xpvar 1"): the bulk-peel blobs (X choice-5 certificates, XPN records, node-cut 5/6 node records and child
+#   certificates) carry their items as LEB128 varints instead of kill2's [u64 length][LE bytes] per number; the blob length
+#   prefix and every other record are unchanged. --xp2prune N / --xp2exprune N set xp2's minimization passes (0 = off); with
+#   --xp2psteps 0 the certificates are unminimized. All three are in the fingerprint (effective xp2 parameters + xpvar). FLAGS,
+#   FLAGS_I, FLAGS_I13 and PHASE0 are unchanged (default off). Tests: k11 with FLAGS = k10 (jobsA 63/63 canonical md5s, 15089,
+#   same fingerprint); FLAGS_NATIVE: search identical to FLAGS (jobsA state lines), canonical streams identical at 4, 8, 16
+#   threads (det/R_n11t*), resume on H4 (SIGTERM at 90 s, kill -9 at 110 s) identical to the uninterrupted run (rt/RUHN11);
+#   every varint blob of 15089 decodes to the batch-10 item list (207,291 blobs, exp/xpvarchk.py). Job 15089: generation 108.5 s
+#   user CPU (FLAGS 160.5 s), stream 43.7 MB (FLAGS 167.0 MB); jobsA at 8 threads: 91.9 s user (FLAGS 130.0 s); H4 (4 heavy poolH
+#   jobs): 136 / 127 / 103 / 97 MB (FLAGS 444 / 436 / 315 / 309 MB).
+# 2026-10-07 02:20 UTC, batch 10 (binary prof7R3k10 unchanged): case II moves to the L479 table (the user's decision,
+#   2026-10-07; the L479 enumeration had 0 SAT at 1,650/1,758). L479 enters as explicit cap-1 kept rows for the 441 class-479
+#   lines (one orbit, rank type (1,2,2); ids 3781613..3782053 after the unchanged C3eD rows) plus class 479 at lb 21 in the
+#   table. New FLAGS data paths (table, kept rows, peel c2t and label files). Case II's Lean side: rows at Ω = CaseK 14 22
+#   (leaf/RT agent: L5II.table_specII / bindQ_specII over rowEII). Tests: jobsA search identical to prof7R2 (typecut 31) and
+#   prof7R3f (95) on the same files; jobsA canonical streams identical at 4, 8, 16 threads; resume on H3 and on H4 (SIGTERM at
+#   90 s and kill -9 at 110 s, 35-47 journal records, up to 10 skip references per job): canonical streams identical. Job 15089:
+#   1,701 nodes, 4 leaves, 4 profiles (C3eD: 16,884 / 89 / 81), generation 160 s user CPU (764 s), 167 MB of stream.
+# 2026-10-07 01:50 UTC, batch 9 (prof7R3.cc 1302567b3438, prof7R3k10; readers unchanged from batch 8): kill2's budget cut and
+#   incremental step pruning (DESIGN 27.14): --xp2cut 2 --xp2psteps 2 in all FLAGS lines, generator xpeel2.{h,cc} re-pinned. On
+#   15089: 0 node cuts not taken (29), expansions only by the crow rule, same search, generation 764 s (631 s without step
+#   pruning). --pctop now searches the top subtrees with every cut of a job run (batch 8 used collection mode, whose DUMP kept
+#   ~30x more jobs, nearly all killed at their roots by the --minr1 window). Tests with these lines: search identity on jobsA
+#   (typecut 31: prof7R2's state lines and profiles; typecut 95: prof7R3f's), resume (SIGTERM, kill -9: identical canonical
+#   streams on H3), determinism (jobsA identical at 4, 8, 16 threads).
+# 2026-10-07 01:20 UTC, batch 8 (prof7R3.cc 28f96353d8b5, prof7R3k9; r3rec.h dc0a2623c6e7, r3cat.cc defadd62bf51): --pctop F PFILE
+#   (phase 0, QUEUE.md §8): top segments of kind 4 with JOB records (0x2D). Search and job streams unchanged: jobsA canonical
+#   streams identical to batch 5/7 at 4, 8, 16 threads; r3cat_k9 gives the same md5s on older streams. Top to depth 4 under {0}:
+#   DUMP identical to a plain collection under {0} (317 jobs); 40 prefixes to depth 7: 36,363 JOBs, two runs identical.
+# 2026-10-06 23:55 UTC, batch 7 (prof7R3.cc b938c39fbd68, binary prof7R3k8): no donation while collecting a frontier in process
+#   (with --agedonate > 0 the collection lost its children and the frontier came out empty; runs that read --frontierfile are
+#   unchanged). New lines FLAGS_I / FLAGS_I13 and JOBS. Case II: jobsA canonical streams identical to batch 5's. Case I with the
+#   X line: 629,424 nodes, 20,880 leaves, 3,580 profiles (= the uncertified run's leaves and profiles); canonical streams of its 3
+#   jobs identical at 16 and 7 threads; generation 1,793 s user CPU; 2,823 X kills without a peel certificate are expanded.
+# 2026-10-06 23:20 UTC, batch 6 (prof7R3.cc 2abfe67265a5, prof7R3k7): the bulk peel's label table follows --rord; the --pcxp files
+#   are checked against the kept rows at startup (123 files under --rord 321 are rejected). Case II streams unchanged (jobsA at 4,
+#   8, 16 threads).
+# 2026-10-06 22:55 UTC, batch 5 (prof7R3.cc 5b797f553663, binary prof7R3k6): kill2's xpeel2 merged (kill2/p5/mkx.py output on
+#   batch 4, identical to kill2/prof7R3x.cc 19f0de8e1c4a; generator pinned in r3/xp2/), plus --pcnorep in the xp2 path, --xp2agg N
+#   (0: 27.11, 2: hybrid; wins over P2_AGG) and the effective xp2 parameters in the search fingerprint. New flags --xp2 --xp2agg 2;
+#   --pcexp5 1000 measured (above). Tests on the merged binary with this FLAGS line:
+#   - search identity, jobsA: with --typecut 31 against prof7R2 identical (4,392 nodes, 19 leaves, 9 profiles); with 95 against
+#     prof7R3f (validated batch-1 binary, no stream) identical (4,297 / 10 / 4). prof7R2 implements type bits 1-16 only.
+#   - resume, H3 (25118 26850 15089): SIGTERM at 70 s and kill -9 at 100 s, each resumed with --skipjournal: canonical streams
+#     identical to the uninterrupted run (rt/RU, RT, RK).
+#   - determinism, jobsA: canonical streams identical at 4, 8, 16 and 6 threads (63/63 jobs; det/R_k6t*.md5).
+#   - job 15089: no X record of choice 0 (2,058,565 choice 5, 8,541 choice 2).
+# 2026-10-06 21:40 UTC, batch 4 (prof7R3.cc 91f60109934d, binary prof7R3k5):
+#   --typecut 95 (was 1535): the type set the Lean side proves (KD.typeFacts95_of; thm4's Gram certificates cover it).
+#   --xpminbb 1 (was the default 2): kills with bb = 1 were written as replayed choice 0 (22% of the X kills of job 15089).
+#   --pcnorep (new): no replayed kill. An X kill without a certificate is expanded (choice 2, its records follow); a node cut 5/6
+#     whose bulk-peel certificate fails is not taken (misCheck runs again without that cut kind; the node is searched). Needs --pcxp.
+#     The search fingerprint mixes "pcnorep-xplim=<N>" (the node cut decisions depend on the peel's node limit).
+#   --xplim 4000 written out (the default). A larger limit changes nothing: on job 15089 xplim 64000 gives the same 76 failed
+#     X kills and 29 failed node cuts 6. They are structural: the peel's relaxation has lower-bound demands only and never uses
+#     that a completion has exactly t points, so a kill that needs "the deficits cannot all be met with t points" has no peel
+#     certificate (the relaxed solutions found have t+1 points).
+#   Search and stream format otherwise unchanged; r3cat/r3rec unchanged.
+# 2026-10-06 19:35 UTC, batch 3 (prof7R3.cc 1944bd467d53, prof7R3k4): node-cut certificates at segment roots computed from the
+#   prefix (determinism fix). Flags as batch 2.
+# 2026-10-06 19:05 UTC, batch 2 (prof7R3.cc 942b1abdbcdb, prof7R3k2): node cuts 5/6 carry bulk-peel certificates (#cutx 1),
+#   --pcleafx, --pcvcut, --pcxp defaults to kinds 2-5. Flags: run3w.sh options + --mis 4 21 --crow 14 20 16000 --dmis 10 21
+#   --typecut 1535 --nosplit --pcvcut --pcleafx --pcxp C2T LAB --pcexp5 1000.
+# 2026-10-06 ~17:30 UTC (R3.md 5.11-5.13): Lemma W off (run3w.sh), every X kill through the bulk peel (--pcxp), --pcexp5 560.
+# 2026-10-06 earlier (R3.md 5.9): --pcexp5 79 (kill2's first crow rule).

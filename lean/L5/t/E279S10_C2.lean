@@ -1,0 +1,9 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import L5.t.E279S10_Data
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+namespace E279S10
+theorem ok2 : S7X.chunkT (lits.getD 0 0) paths recs 115 64 588 = true := by decide +kernel
+end E279S10

@@ -1,0 +1,21 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import S7.Nest
+public import E1.E1Load
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+#e1lits E202S2 "data/lean/09d3575b167217246a4b287c409277e3/E202S2.bin"
+namespace E202S2
+open BC7x
+/-- records `(path, first sub-record, sub-record count, certificate)`, BFS order of the record tree -/
+noncomputable def recs : List (List Step × Nat × Nat × Nat) := [
+([(8, true, false, [254, 282], [176], 0)], 4, 0, E202S2.L1),
+([(8, true, false, [254, 282], [176], 4)], 4, 0, E202S2.L2),
+([(8, true, false, [254, 282], [176], 10)], 4, 0, E202S2.L3),
+([(8, true, false, [254, 282], [176], 36)], 4, 0, E202S2.L4)
+]
+noncomputable def paths : List (List Step) := recs.map Prod.fst
+/-- the main record's external subtrees are records `0 .. m0-1` -/
+def m0 : Nat := 4
+end E202S2

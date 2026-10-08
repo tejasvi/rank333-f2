@@ -1,0 +1,2 @@
+ok: excess-1 system holds on 13 Delta=1 sides; states() recovers the true term state in 52 trials
+rc=0

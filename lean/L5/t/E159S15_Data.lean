@@ -1,0 +1,31 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import S7.Nest
+public import E1.E1Load
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+#e1lits E159S15 "data/lean/5fc1aac64b3510466b54682d3fb6631f/E159S15.bin"
+namespace E159S15
+open BC7x
+/-- records `(path, first sub-record, sub-record count, certificate)`, BFS order of the record tree -/
+noncomputable def recs : List (List Step × Nat × Nat × Nat) := [
+([(4, true, false, [94, 84, 340], [510], 1)], 14, 0, E159S15.L1),
+([(4, true, false, [94, 84, 340], [510], 21)], 14, 0, E159S15.L2),
+([(4, true, false, [94, 84, 340], [510], 40)], 14, 0, E159S15.L3),
+([(4, true, false, [94, 84, 340], [510], 41)], 14, 0, E159S15.L4),
+([(4, true, false, [94, 84, 340], [510], 42)], 14, 0, E159S15.L5),
+([(4, true, false, [94, 84, 340], [510], 60)], 14, 0, E159S15.L6),
+([(4, true, false, [94, 84, 340], [510], 61)], 14, 0, E159S15.L7),
+([(4, true, false, [94, 84, 340], [510], 67)], 14, 0, E159S15.L8),
+([(4, true, false, [94, 84, 340], [510], 79)], 14, 0, E159S15.L9),
+([(4, true, false, [94, 84, 340], [510], 81)], 14, 0, E159S15.L10),
+([(4, true, false, [94, 84, 340], [510], 84)], 14, 0, E159S15.L11),
+([(4, true, false, [94, 84, 340], [510], 100)], 14, 0, E159S15.L12),
+([(4, true, false, [94, 84, 340], [510], 101)], 14, 0, E159S15.L13),
+([(4, true, false, [94, 84, 340], [510], 203)], 14, 0, E159S15.L14)
+]
+noncomputable def paths : List (List Step) := recs.map Prod.fst
+/-- the main record's external subtrees are records `0 .. m0-1` -/
+def m0 : Nat := 14
+end E159S15

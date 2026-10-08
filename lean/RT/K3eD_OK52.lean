@@ -1,0 +1,243 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import RT.K3eD_Data
+@[expose] public section
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+namespace RT.K3eD
+open RT
+theorem ok_3088384 : allOK 3088384 512 = true := by decide +kernel
+theorem ok_3088896 : allOK 3088896 512 = true := by decide +kernel
+theorem ok_3089408 : allOK 3089408 512 = true := by decide +kernel
+theorem ok_3089920 : allOK 3089920 512 = true := by decide +kernel
+theorem ok_3090432 : allOK 3090432 512 = true := by decide +kernel
+theorem ok_3090944 : allOK 3090944 512 = true := by decide +kernel
+theorem ok_3091456 : allOK 3091456 512 = true := by decide +kernel
+theorem ok_3091968 : allOK 3091968 512 = true := by decide +kernel
+theorem ok_3092480 : allOK 3092480 512 = true := by decide +kernel
+theorem ok_3092992 : allOK 3092992 512 = true := by decide +kernel
+theorem ok_3093504 : allOK 3093504 512 = true := by decide +kernel
+theorem ok_3094016 : allOK 3094016 512 = true := by decide +kernel
+theorem ok_3094528 : allOK 3094528 512 = true := by decide +kernel
+theorem ok_3095040 : allOK 3095040 512 = true := by decide +kernel
+theorem ok_3095552 : allOK 3095552 512 = true := by decide +kernel
+theorem ok_3096064 : allOK 3096064 512 = true := by decide +kernel
+theorem ok_3096576 : allOK 3096576 512 = true := by decide +kernel
+theorem ok_3097088 : allOK 3097088 512 = true := by decide +kernel
+theorem ok_3097600 : allOK 3097600 512 = true := by decide +kernel
+theorem ok_3098112 : allOK 3098112 512 = true := by decide +kernel
+theorem ok_3098624 : allOK 3098624 512 = true := by decide +kernel
+theorem ok_3099136 : allOK 3099136 512 = true := by decide +kernel
+theorem ok_3099648 : allOK 3099648 512 = true := by decide +kernel
+theorem ok_3100160 : allOK 3100160 512 = true := by decide +kernel
+theorem ok_3100672 : allOK 3100672 512 = true := by decide +kernel
+theorem ok_3101184 : allOK 3101184 512 = true := by decide +kernel
+theorem ok_3101696 : allOK 3101696 512 = true := by decide +kernel
+theorem ok_3102208 : allOK 3102208 512 = true := by decide +kernel
+theorem ok_3102720 : allOK 3102720 512 = true := by decide +kernel
+theorem ok_3103232 : allOK 3103232 512 = true := by decide +kernel
+theorem ok_3103744 : allOK 3103744 512 = true := by decide +kernel
+theorem ok_3104256 : allOK 3104256 512 = true := by decide +kernel
+theorem ok_3104768 : allOK 3104768 512 = true := by decide +kernel
+theorem ok_3105280 : allOK 3105280 512 = true := by decide +kernel
+theorem ok_3105792 : allOK 3105792 512 = true := by decide +kernel
+theorem ok_3106304 : allOK 3106304 512 = true := by decide +kernel
+theorem ok_3106816 : allOK 3106816 512 = true := by decide +kernel
+theorem ok_3107328 : allOK 3107328 512 = true := by decide +kernel
+theorem ok_3107840 : allOK 3107840 512 = true := by decide +kernel
+theorem ok_3108352 : allOK 3108352 512 = true := by decide +kernel
+theorem ok_3108864 : allOK 3108864 512 = true := by decide +kernel
+theorem ok_3109376 : allOK 3109376 512 = true := by decide +kernel
+theorem ok_3109888 : allOK 3109888 512 = true := by decide +kernel
+theorem ok_3110400 : allOK 3110400 512 = true := by decide +kernel
+theorem ok_3110912 : allOK 3110912 512 = true := by decide +kernel
+theorem ok_3111424 : allOK 3111424 512 = true := by decide +kernel
+theorem ok_3111936 : allOK 3111936 512 = true := by decide +kernel
+theorem ok_3112448 : allOK 3112448 512 = true := by decide +kernel
+theorem ok_3112960 : allOK 3112960 512 = true := by decide +kernel
+theorem ok_3113472 : allOK 3113472 512 = true := by decide +kernel
+theorem ok_3113984 : allOK 3113984 512 = true := by decide +kernel
+theorem ok_3114496 : allOK 3114496 512 = true := by decide +kernel
+theorem ok_3115008 : allOK 3115008 512 = true := by decide +kernel
+theorem ok_3115520 : allOK 3115520 512 = true := by decide +kernel
+theorem ok_3116032 : allOK 3116032 512 = true := by decide +kernel
+theorem ok_3116544 : allOK 3116544 512 = true := by decide +kernel
+theorem ok_3117056 : allOK 3117056 512 = true := by decide +kernel
+theorem ok_3117568 : allOK 3117568 512 = true := by decide +kernel
+theorem ok_3118080 : allOK 3118080 512 = true := by decide +kernel
+theorem ok_3118592 : allOK 3118592 512 = true := by decide +kernel
+theorem ok_3119104 : allOK 3119104 512 = true := by decide +kernel
+theorem ok_3119616 : allOK 3119616 512 = true := by decide +kernel
+theorem ok_3120128 : allOK 3120128 512 = true := by decide +kernel
+theorem ok_3120640 : allOK 3120640 512 = true := by decide +kernel
+theorem ok_3121152 : allOK 3121152 512 = true := by decide +kernel
+theorem ok_3121664 : allOK 3121664 512 = true := by decide +kernel
+theorem ok_3122176 : allOK 3122176 512 = true := by decide +kernel
+theorem ok_3122688 : allOK 3122688 512 = true := by decide +kernel
+theorem ok_3123200 : allOK 3123200 512 = true := by decide +kernel
+theorem ok_3123712 : allOK 3123712 512 = true := by decide +kernel
+theorem ok_3124224 : allOK 3124224 512 = true := by decide +kernel
+theorem ok_3124736 : allOK 3124736 512 = true := by decide +kernel
+theorem ok_3125248 : allOK 3125248 512 = true := by decide +kernel
+theorem ok_3125760 : allOK 3125760 512 = true := by decide +kernel
+theorem ok_3126272 : allOK 3126272 512 = true := by decide +kernel
+theorem ok_3126784 : allOK 3126784 512 = true := by decide +kernel
+theorem ok_3127296 : allOK 3127296 512 = true := by decide +kernel
+theorem ok_3127808 : allOK 3127808 512 = true := by decide +kernel
+theorem ok_3128320 : allOK 3128320 512 = true := by decide +kernel
+theorem ok_3128832 : allOK 3128832 512 = true := by decide +kernel
+theorem ok_3129344 : allOK 3129344 512 = true := by decide +kernel
+theorem ok_3129856 : allOK 3129856 512 = true := by decide +kernel
+theorem ok_3130368 : allOK 3130368 512 = true := by decide +kernel
+theorem ok_3130880 : allOK 3130880 512 = true := by decide +kernel
+theorem ok_3131392 : allOK 3131392 512 = true := by decide +kernel
+theorem ok_3131904 : allOK 3131904 512 = true := by decide +kernel
+theorem ok_3132416 : allOK 3132416 512 = true := by decide +kernel
+theorem ok_3132928 : allOK 3132928 512 = true := by decide +kernel
+theorem ok_3133440 : allOK 3133440 512 = true := by decide +kernel
+theorem ok_3133952 : allOK 3133952 512 = true := by decide +kernel
+theorem ok_3134464 : allOK 3134464 512 = true := by decide +kernel
+theorem ok_3134976 : allOK 3134976 512 = true := by decide +kernel
+theorem ok_3135488 : allOK 3135488 512 = true := by decide +kernel
+theorem ok_3136000 : allOK 3136000 512 = true := by decide +kernel
+theorem ok_3136512 : allOK 3136512 512 = true := by decide +kernel
+theorem ok_3137024 : allOK 3137024 512 = true := by decide +kernel
+theorem ok_3137536 : allOK 3137536 512 = true := by decide +kernel
+theorem ok_3138048 : allOK 3138048 512 = true := by decide +kernel
+theorem ok_3138560 : allOK 3138560 512 = true := by decide +kernel
+theorem ok_3139072 : allOK 3139072 512 = true := by decide +kernel
+theorem ok_3139584 : allOK 3139584 512 = true := by decide +kernel
+theorem ok_3140096 : allOK 3140096 512 = true := by decide +kernel
+theorem ok_3140608 : allOK 3140608 512 = true := by decide +kernel
+theorem ok_3141120 : allOK 3141120 512 = true := by decide +kernel
+theorem ok_3141632 : allOK 3141632 512 = true := by decide +kernel
+theorem ok_3142144 : allOK 3142144 512 = true := by decide +kernel
+theorem ok_3142656 : allOK 3142656 512 = true := by decide +kernel
+theorem ok_3143168 : allOK 3143168 512 = true := by decide +kernel
+theorem ok_3143680 : allOK 3143680 512 = true := by decide +kernel
+theorem ok_3144192 : allOK 3144192 512 = true := by decide +kernel
+theorem ok_3144704 : allOK 3144704 512 = true := by decide +kernel
+theorem ok_3145216 : allOK 3145216 512 = true := by decide +kernel
+theorem ok_3145728 : allOK 3145728 512 = true := by decide +kernel
+theorem ok_3146240 : allOK 3146240 512 = true := by decide +kernel
+theorem ok_3146752 : allOK 3146752 512 = true := by decide +kernel
+theorem ok_3147264 : allOK 3147264 512 = true := by decide +kernel
+theorem okM52 : allOK 3088384 59392 = true := by
+  have h0 : allOK 3088384 512 = true := ok_3088384
+  have h1 : allOK 3088384 1024 = true := allOK_join 3088384 512 512 h0 ok_3088896
+  have h2 : allOK 3088384 1536 = true := allOK_join 3088384 1024 512 h1 ok_3089408
+  have h3 : allOK 3088384 2048 = true := allOK_join 3088384 1536 512 h2 ok_3089920
+  have h4 : allOK 3088384 2560 = true := allOK_join 3088384 2048 512 h3 ok_3090432
+  have h5 : allOK 3088384 3072 = true := allOK_join 3088384 2560 512 h4 ok_3090944
+  have h6 : allOK 3088384 3584 = true := allOK_join 3088384 3072 512 h5 ok_3091456
+  have h7 : allOK 3088384 4096 = true := allOK_join 3088384 3584 512 h6 ok_3091968
+  have h8 : allOK 3088384 4608 = true := allOK_join 3088384 4096 512 h7 ok_3092480
+  have h9 : allOK 3088384 5120 = true := allOK_join 3088384 4608 512 h8 ok_3092992
+  have h10 : allOK 3088384 5632 = true := allOK_join 3088384 5120 512 h9 ok_3093504
+  have h11 : allOK 3088384 6144 = true := allOK_join 3088384 5632 512 h10 ok_3094016
+  have h12 : allOK 3088384 6656 = true := allOK_join 3088384 6144 512 h11 ok_3094528
+  have h13 : allOK 3088384 7168 = true := allOK_join 3088384 6656 512 h12 ok_3095040
+  have h14 : allOK 3088384 7680 = true := allOK_join 3088384 7168 512 h13 ok_3095552
+  have h15 : allOK 3088384 8192 = true := allOK_join 3088384 7680 512 h14 ok_3096064
+  have h16 : allOK 3088384 8704 = true := allOK_join 3088384 8192 512 h15 ok_3096576
+  have h17 : allOK 3088384 9216 = true := allOK_join 3088384 8704 512 h16 ok_3097088
+  have h18 : allOK 3088384 9728 = true := allOK_join 3088384 9216 512 h17 ok_3097600
+  have h19 : allOK 3088384 10240 = true := allOK_join 3088384 9728 512 h18 ok_3098112
+  have h20 : allOK 3088384 10752 = true := allOK_join 3088384 10240 512 h19 ok_3098624
+  have h21 : allOK 3088384 11264 = true := allOK_join 3088384 10752 512 h20 ok_3099136
+  have h22 : allOK 3088384 11776 = true := allOK_join 3088384 11264 512 h21 ok_3099648
+  have h23 : allOK 3088384 12288 = true := allOK_join 3088384 11776 512 h22 ok_3100160
+  have h24 : allOK 3088384 12800 = true := allOK_join 3088384 12288 512 h23 ok_3100672
+  have h25 : allOK 3088384 13312 = true := allOK_join 3088384 12800 512 h24 ok_3101184
+  have h26 : allOK 3088384 13824 = true := allOK_join 3088384 13312 512 h25 ok_3101696
+  have h27 : allOK 3088384 14336 = true := allOK_join 3088384 13824 512 h26 ok_3102208
+  have h28 : allOK 3088384 14848 = true := allOK_join 3088384 14336 512 h27 ok_3102720
+  have h29 : allOK 3088384 15360 = true := allOK_join 3088384 14848 512 h28 ok_3103232
+  have h30 : allOK 3088384 15872 = true := allOK_join 3088384 15360 512 h29 ok_3103744
+  have h31 : allOK 3088384 16384 = true := allOK_join 3088384 15872 512 h30 ok_3104256
+  have h32 : allOK 3088384 16896 = true := allOK_join 3088384 16384 512 h31 ok_3104768
+  have h33 : allOK 3088384 17408 = true := allOK_join 3088384 16896 512 h32 ok_3105280
+  have h34 : allOK 3088384 17920 = true := allOK_join 3088384 17408 512 h33 ok_3105792
+  have h35 : allOK 3088384 18432 = true := allOK_join 3088384 17920 512 h34 ok_3106304
+  have h36 : allOK 3088384 18944 = true := allOK_join 3088384 18432 512 h35 ok_3106816
+  have h37 : allOK 3088384 19456 = true := allOK_join 3088384 18944 512 h36 ok_3107328
+  have h38 : allOK 3088384 19968 = true := allOK_join 3088384 19456 512 h37 ok_3107840
+  have h39 : allOK 3088384 20480 = true := allOK_join 3088384 19968 512 h38 ok_3108352
+  have h40 : allOK 3088384 20992 = true := allOK_join 3088384 20480 512 h39 ok_3108864
+  have h41 : allOK 3088384 21504 = true := allOK_join 3088384 20992 512 h40 ok_3109376
+  have h42 : allOK 3088384 22016 = true := allOK_join 3088384 21504 512 h41 ok_3109888
+  have h43 : allOK 3088384 22528 = true := allOK_join 3088384 22016 512 h42 ok_3110400
+  have h44 : allOK 3088384 23040 = true := allOK_join 3088384 22528 512 h43 ok_3110912
+  have h45 : allOK 3088384 23552 = true := allOK_join 3088384 23040 512 h44 ok_3111424
+  have h46 : allOK 3088384 24064 = true := allOK_join 3088384 23552 512 h45 ok_3111936
+  have h47 : allOK 3088384 24576 = true := allOK_join 3088384 24064 512 h46 ok_3112448
+  have h48 : allOK 3088384 25088 = true := allOK_join 3088384 24576 512 h47 ok_3112960
+  have h49 : allOK 3088384 25600 = true := allOK_join 3088384 25088 512 h48 ok_3113472
+  have h50 : allOK 3088384 26112 = true := allOK_join 3088384 25600 512 h49 ok_3113984
+  have h51 : allOK 3088384 26624 = true := allOK_join 3088384 26112 512 h50 ok_3114496
+  have h52 : allOK 3088384 27136 = true := allOK_join 3088384 26624 512 h51 ok_3115008
+  have h53 : allOK 3088384 27648 = true := allOK_join 3088384 27136 512 h52 ok_3115520
+  have h54 : allOK 3088384 28160 = true := allOK_join 3088384 27648 512 h53 ok_3116032
+  have h55 : allOK 3088384 28672 = true := allOK_join 3088384 28160 512 h54 ok_3116544
+  have h56 : allOK 3088384 29184 = true := allOK_join 3088384 28672 512 h55 ok_3117056
+  have h57 : allOK 3088384 29696 = true := allOK_join 3088384 29184 512 h56 ok_3117568
+  have h58 : allOK 3088384 30208 = true := allOK_join 3088384 29696 512 h57 ok_3118080
+  have h59 : allOK 3088384 30720 = true := allOK_join 3088384 30208 512 h58 ok_3118592
+  have h60 : allOK 3088384 31232 = true := allOK_join 3088384 30720 512 h59 ok_3119104
+  have h61 : allOK 3088384 31744 = true := allOK_join 3088384 31232 512 h60 ok_3119616
+  have h62 : allOK 3088384 32256 = true := allOK_join 3088384 31744 512 h61 ok_3120128
+  have h63 : allOK 3088384 32768 = true := allOK_join 3088384 32256 512 h62 ok_3120640
+  have h64 : allOK 3088384 33280 = true := allOK_join 3088384 32768 512 h63 ok_3121152
+  have h65 : allOK 3088384 33792 = true := allOK_join 3088384 33280 512 h64 ok_3121664
+  have h66 : allOK 3088384 34304 = true := allOK_join 3088384 33792 512 h65 ok_3122176
+  have h67 : allOK 3088384 34816 = true := allOK_join 3088384 34304 512 h66 ok_3122688
+  have h68 : allOK 3088384 35328 = true := allOK_join 3088384 34816 512 h67 ok_3123200
+  have h69 : allOK 3088384 35840 = true := allOK_join 3088384 35328 512 h68 ok_3123712
+  have h70 : allOK 3088384 36352 = true := allOK_join 3088384 35840 512 h69 ok_3124224
+  have h71 : allOK 3088384 36864 = true := allOK_join 3088384 36352 512 h70 ok_3124736
+  have h72 : allOK 3088384 37376 = true := allOK_join 3088384 36864 512 h71 ok_3125248
+  have h73 : allOK 3088384 37888 = true := allOK_join 3088384 37376 512 h72 ok_3125760
+  have h74 : allOK 3088384 38400 = true := allOK_join 3088384 37888 512 h73 ok_3126272
+  have h75 : allOK 3088384 38912 = true := allOK_join 3088384 38400 512 h74 ok_3126784
+  have h76 : allOK 3088384 39424 = true := allOK_join 3088384 38912 512 h75 ok_3127296
+  have h77 : allOK 3088384 39936 = true := allOK_join 3088384 39424 512 h76 ok_3127808
+  have h78 : allOK 3088384 40448 = true := allOK_join 3088384 39936 512 h77 ok_3128320
+  have h79 : allOK 3088384 40960 = true := allOK_join 3088384 40448 512 h78 ok_3128832
+  have h80 : allOK 3088384 41472 = true := allOK_join 3088384 40960 512 h79 ok_3129344
+  have h81 : allOK 3088384 41984 = true := allOK_join 3088384 41472 512 h80 ok_3129856
+  have h82 : allOK 3088384 42496 = true := allOK_join 3088384 41984 512 h81 ok_3130368
+  have h83 : allOK 3088384 43008 = true := allOK_join 3088384 42496 512 h82 ok_3130880
+  have h84 : allOK 3088384 43520 = true := allOK_join 3088384 43008 512 h83 ok_3131392
+  have h85 : allOK 3088384 44032 = true := allOK_join 3088384 43520 512 h84 ok_3131904
+  have h86 : allOK 3088384 44544 = true := allOK_join 3088384 44032 512 h85 ok_3132416
+  have h87 : allOK 3088384 45056 = true := allOK_join 3088384 44544 512 h86 ok_3132928
+  have h88 : allOK 3088384 45568 = true := allOK_join 3088384 45056 512 h87 ok_3133440
+  have h89 : allOK 3088384 46080 = true := allOK_join 3088384 45568 512 h88 ok_3133952
+  have h90 : allOK 3088384 46592 = true := allOK_join 3088384 46080 512 h89 ok_3134464
+  have h91 : allOK 3088384 47104 = true := allOK_join 3088384 46592 512 h90 ok_3134976
+  have h92 : allOK 3088384 47616 = true := allOK_join 3088384 47104 512 h91 ok_3135488
+  have h93 : allOK 3088384 48128 = true := allOK_join 3088384 47616 512 h92 ok_3136000
+  have h94 : allOK 3088384 48640 = true := allOK_join 3088384 48128 512 h93 ok_3136512
+  have h95 : allOK 3088384 49152 = true := allOK_join 3088384 48640 512 h94 ok_3137024
+  have h96 : allOK 3088384 49664 = true := allOK_join 3088384 49152 512 h95 ok_3137536
+  have h97 : allOK 3088384 50176 = true := allOK_join 3088384 49664 512 h96 ok_3138048
+  have h98 : allOK 3088384 50688 = true := allOK_join 3088384 50176 512 h97 ok_3138560
+  have h99 : allOK 3088384 51200 = true := allOK_join 3088384 50688 512 h98 ok_3139072
+  have h100 : allOK 3088384 51712 = true := allOK_join 3088384 51200 512 h99 ok_3139584
+  have h101 : allOK 3088384 52224 = true := allOK_join 3088384 51712 512 h100 ok_3140096
+  have h102 : allOK 3088384 52736 = true := allOK_join 3088384 52224 512 h101 ok_3140608
+  have h103 : allOK 3088384 53248 = true := allOK_join 3088384 52736 512 h102 ok_3141120
+  have h104 : allOK 3088384 53760 = true := allOK_join 3088384 53248 512 h103 ok_3141632
+  have h105 : allOK 3088384 54272 = true := allOK_join 3088384 53760 512 h104 ok_3142144
+  have h106 : allOK 3088384 54784 = true := allOK_join 3088384 54272 512 h105 ok_3142656
+  have h107 : allOK 3088384 55296 = true := allOK_join 3088384 54784 512 h106 ok_3143168
+  have h108 : allOK 3088384 55808 = true := allOK_join 3088384 55296 512 h107 ok_3143680
+  have h109 : allOK 3088384 56320 = true := allOK_join 3088384 55808 512 h108 ok_3144192
+  have h110 : allOK 3088384 56832 = true := allOK_join 3088384 56320 512 h109 ok_3144704
+  have h111 : allOK 3088384 57344 = true := allOK_join 3088384 56832 512 h110 ok_3145216
+  have h112 : allOK 3088384 57856 = true := allOK_join 3088384 57344 512 h111 ok_3145728
+  have h113 : allOK 3088384 58368 = true := allOK_join 3088384 57856 512 h112 ok_3146240
+  have h114 : allOK 3088384 58880 = true := allOK_join 3088384 58368 512 h113 ok_3146752
+  have h115 : allOK 3088384 59392 = true := allOK_join 3088384 58880 512 h114 ok_3147264
+  exact h115
+end RT.K3eD

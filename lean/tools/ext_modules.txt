@@ -1,0 +1,156 @@
+# External module files: infra's and E1's aggregation output (GA* glues: GA_fin, GA_a2r<K>, GAe303f, GAptr<K>, …; NC_* chunks), built against ckr-e07b8136b3c8 (= the port's bytes)
+# and used as they are (PROOF_OBJECT §11, FINAL_CHECKLIST 5.1). PORT_EXT_MODULES=<file> replaces this file (stub dry runs).
+#   pattern GLOB          an import matching GLOB is an external module file: snap.py takes it as a leaf (no olean lookup, no
+#                         traversal), port.py keeps its `public import` (no umbrella), build.py/val.py resolve it from the dirs below
+#   dir PATH              a LEAN_PATH directory, after build/ (on the build VM; a missing one is skipped)
+#   rounds GLOB MARKER    every directory matching GLOB that contains MARKER (a round counts only once its transfer completed)
+#   trace GLOB            oleans whose md5 (sorted by path) traces every module that imports an external module file
+#                         (`fin` directories may be rebuilt; rounds and flat chunks are write-once)
+pattern GA*
+pattern NC_*
+rounds r22/lean/native/infra/run/agg/a2/r[0-9]* .xfer_ok
+dir r22/lean/native/infra/run/agg/a2/fin
+dir r22/lean/native/infra/run/agg/a2/flat
+dir r22/lean/native/infra/run/agg/I/fin
+dir r22/lean/native/infra/run/agg/I/flat
+dir r22/lean/native/infra/run/agg/I13/fin
+dir r22/lean/native/infra/run/agg/I13/flat
+# E1's final glues and chunk stores (copied by infra to h18, sha256-verified; 2026-10-07 18:5x UTC). E1's glue namespaces have no
+# underscore (GAe303f, GAe321f, GAl479x1, GAl479x2, …): the GA* pattern covers them; the chunk names (NC_e303_p*, NC_e321_p*,
+# NC_bl479_x1_*, NC_bl479_x2_*) are disjoint from case II/I/I13's (NC_rerunH_*, NC_rerunI_*, NC_rerunI13_*)
+dir r22/lean/native/infra/run/agg/e1/e303f
+dir r22/lean/native/infra/run/agg/e1/e321f
+dir r22/lean/native/infra/run/agg/e1/l479x1
+dir r22/lean/native/infra/run/agg/e1/l479x2
+dir r22/lean/native/infra/run/agg/e1/st303
+dir r22/lean/native/infra/run/agg/e1/st321
+dir r22/lean/native/infra/run/agg/e1/stx1
+dir r22/lean/native/infra/run/agg/e1/stx2
+# 20:2x UTC (E1 table v2): the X3 tier and the class glues GAh<c>f with their chunk keys (keys/: NC_e1hrc1h<c>p*_c*)
+dir r22/lean/native/infra/run/agg/e1/l479x3
+dir r22/lean/native/infra/run/agg/e1/stx3
+dir r22/lean/native/infra/run/agg/e1/h420f
+dir r22/lean/native/infra/run/agg/e1/h420f/keys
+dir r22/lean/native/infra/run/agg/e1/h450f
+dir r22/lean/native/infra/run/agg/e1/h450f/keys
+dir r22/lean/native/infra/run/agg/e1/h451f
+dir r22/lean/native/infra/run/agg/e1/h451f/keys
+dir r22/lean/native/infra/run/agg/e1/h454f
+dir r22/lean/native/infra/run/agg/e1/h454f/keys
+dir r22/lean/native/infra/run/agg/e1/h455f
+dir r22/lean/native/infra/run/agg/e1/h455f/keys
+dir r22/lean/native/infra/run/agg/e1/h460f
+dir r22/lean/native/infra/run/agg/e1/h460f/keys
+dir r22/lean/native/infra/run/agg/e1/h463f
+dir r22/lean/native/infra/run/agg/e1/h463f/keys
+dir r22/lean/native/infra/run/agg/e1/h469f
+dir r22/lean/native/infra/run/agg/e1/h469f/keys
+# 21:0x UTC: nine more class glues (17 of 21; 476, 485, 487, 490 follow)
+dir r22/lean/native/infra/run/agg/e1/h456f
+dir r22/lean/native/infra/run/agg/e1/h456f/keys
+dir r22/lean/native/infra/run/agg/e1/h458f
+dir r22/lean/native/infra/run/agg/e1/h458f/keys
+dir r22/lean/native/infra/run/agg/e1/h464f
+dir r22/lean/native/infra/run/agg/e1/h464f/keys
+dir r22/lean/native/infra/run/agg/e1/h465f
+dir r22/lean/native/infra/run/agg/e1/h465f/keys
+dir r22/lean/native/infra/run/agg/e1/h470f
+dir r22/lean/native/infra/run/agg/e1/h470f/keys
+dir r22/lean/native/infra/run/agg/e1/h471f
+dir r22/lean/native/infra/run/agg/e1/h471f/keys
+dir r22/lean/native/infra/run/agg/e1/h472f
+dir r22/lean/native/infra/run/agg/e1/h472f/keys
+dir r22/lean/native/infra/run/agg/e1/h473f
+dir r22/lean/native/infra/run/agg/e1/h473f/keys
+dir r22/lean/native/infra/run/agg/e1/h475f
+dir r22/lean/native/infra/run/agg/e1/h475f/keys
+# 21:3x UTC: class 476 (18 of 21)
+dir r22/lean/native/infra/run/agg/e1/h476f
+dir r22/lean/native/infra/run/agg/e1/h476f/keys
+# 2026-10-08 ~02:0x UTC: E1's pt final (GAptf over the rounds GAptr4/GAptr5; 243,880 used NC_bpt_* chunks; library ckr-6fae2d2db094)
+dir r22/lean/native/infra/run/agg/e1/ptfinal
+dir r22/lean/native/infra/run/agg/e1/ptr4
+dir r22/lean/native/infra/run/agg/e1/ptr5
+dir r22/lean/native/infra/run/agg/e1/stpt
+# 02:4x UTC: class 485 (19 of 21)
+dir r22/lean/native/infra/run/agg/e1/h485f
+dir r22/lean/native/infra/run/agg/e1/h485f/keys
+# 03:1x UTC: class 487 (20 of 21; GAh487f has 1,003 modules)
+dir r22/lean/native/infra/run/agg/e1/h487f
+dir r22/lean/native/infra/run/agg/e1/h487f/keys
+# 05:0x UTC: class 490 (all 21 class finals on h18)
+dir r22/lean/native/infra/run/agg/e1/h490f
+dir r22/lean/native/infra/run/agg/e1/h490f/keys
+# 06:xx UTC: E1's L479 final: GAl479f (23,802 modules) and GAl479s (S32 level) over the rounds GAl479r0-r3; their 3.9M pinned
+# NC_bl479_* chunks in 64 shard dirs stl479_00..3f (shard = md5(chunk name)[:2] mod 64; h18's ext4 has no large_dir)
+dir r22/lean/native/infra/run/agg/e1/l479f
+dir r22/lean/native/infra/run/agg/e1/l479s
+dir r22/lean/native/infra/run/agg/e1/l479r0
+dir r22/lean/native/infra/run/agg/e1/l479r1
+dir r22/lean/native/infra/run/agg/e1/l479r2
+dir r22/lean/native/infra/run/agg/e1/l479r3
+dir r22/lean/native/infra/run/agg/e1/stl479_00
+dir r22/lean/native/infra/run/agg/e1/stl479_01
+dir r22/lean/native/infra/run/agg/e1/stl479_02
+dir r22/lean/native/infra/run/agg/e1/stl479_03
+dir r22/lean/native/infra/run/agg/e1/stl479_04
+dir r22/lean/native/infra/run/agg/e1/stl479_05
+dir r22/lean/native/infra/run/agg/e1/stl479_06
+dir r22/lean/native/infra/run/agg/e1/stl479_07
+dir r22/lean/native/infra/run/agg/e1/stl479_08
+dir r22/lean/native/infra/run/agg/e1/stl479_09
+dir r22/lean/native/infra/run/agg/e1/stl479_0a
+dir r22/lean/native/infra/run/agg/e1/stl479_0b
+dir r22/lean/native/infra/run/agg/e1/stl479_0c
+dir r22/lean/native/infra/run/agg/e1/stl479_0d
+dir r22/lean/native/infra/run/agg/e1/stl479_0e
+dir r22/lean/native/infra/run/agg/e1/stl479_0f
+dir r22/lean/native/infra/run/agg/e1/stl479_10
+dir r22/lean/native/infra/run/agg/e1/stl479_11
+dir r22/lean/native/infra/run/agg/e1/stl479_12
+dir r22/lean/native/infra/run/agg/e1/stl479_13
+dir r22/lean/native/infra/run/agg/e1/stl479_14
+dir r22/lean/native/infra/run/agg/e1/stl479_15
+dir r22/lean/native/infra/run/agg/e1/stl479_16
+dir r22/lean/native/infra/run/agg/e1/stl479_17
+dir r22/lean/native/infra/run/agg/e1/stl479_18
+dir r22/lean/native/infra/run/agg/e1/stl479_19
+dir r22/lean/native/infra/run/agg/e1/stl479_1a
+dir r22/lean/native/infra/run/agg/e1/stl479_1b
+dir r22/lean/native/infra/run/agg/e1/stl479_1c
+dir r22/lean/native/infra/run/agg/e1/stl479_1d
+dir r22/lean/native/infra/run/agg/e1/stl479_1e
+dir r22/lean/native/infra/run/agg/e1/stl479_1f
+dir r22/lean/native/infra/run/agg/e1/stl479_20
+dir r22/lean/native/infra/run/agg/e1/stl479_21
+dir r22/lean/native/infra/run/agg/e1/stl479_22
+dir r22/lean/native/infra/run/agg/e1/stl479_23
+dir r22/lean/native/infra/run/agg/e1/stl479_24
+dir r22/lean/native/infra/run/agg/e1/stl479_25
+dir r22/lean/native/infra/run/agg/e1/stl479_26
+dir r22/lean/native/infra/run/agg/e1/stl479_27
+dir r22/lean/native/infra/run/agg/e1/stl479_28
+dir r22/lean/native/infra/run/agg/e1/stl479_29
+dir r22/lean/native/infra/run/agg/e1/stl479_2a
+dir r22/lean/native/infra/run/agg/e1/stl479_2b
+dir r22/lean/native/infra/run/agg/e1/stl479_2c
+dir r22/lean/native/infra/run/agg/e1/stl479_2d
+dir r22/lean/native/infra/run/agg/e1/stl479_2e
+dir r22/lean/native/infra/run/agg/e1/stl479_2f
+dir r22/lean/native/infra/run/agg/e1/stl479_30
+dir r22/lean/native/infra/run/agg/e1/stl479_31
+dir r22/lean/native/infra/run/agg/e1/stl479_32
+dir r22/lean/native/infra/run/agg/e1/stl479_33
+dir r22/lean/native/infra/run/agg/e1/stl479_34
+dir r22/lean/native/infra/run/agg/e1/stl479_35
+dir r22/lean/native/infra/run/agg/e1/stl479_36
+dir r22/lean/native/infra/run/agg/e1/stl479_37
+dir r22/lean/native/infra/run/agg/e1/stl479_38
+dir r22/lean/native/infra/run/agg/e1/stl479_39
+dir r22/lean/native/infra/run/agg/e1/stl479_3a
+dir r22/lean/native/infra/run/agg/e1/stl479_3b
+dir r22/lean/native/infra/run/agg/e1/stl479_3c
+dir r22/lean/native/infra/run/agg/e1/stl479_3d
+dir r22/lean/native/infra/run/agg/e1/stl479_3e
+dir r22/lean/native/infra/run/agg/e1/stl479_3f
+trace GA*

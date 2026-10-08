@@ -1,0 +1,15 @@
+# copy of port/out/FROZEN as written at 2026-10-08 08:05 UTC, when V5 was still pending; V5 was re-run over this frozen tree
+# at 08:28-08:47 UTC and passed (reports/v5_report.txt, reports/v5_allow/)
+FROZEN 2026-10-08 08:05:08 UTC: the final tree. Coordinator 2026-10-08: the final V5 re-run must run over exactly the tree V1-V4 validated.
+snapshot 2026-10-08 06:54:17 UTC: 44086 non-module files (43912 in the closure of roots.txt, 174 V4 only; 46 added, 4 changed, 14 removed), 116 own module files; 82 with source newer than olean
+MANIFEST_FULL.md5 315565 files, md5 7c5a67484a53 (sources, frozen data, ported sources, every build part, libnative.so)
+build traces 44328, md5 of all traces 55f8674bb5d336e66a9eba310af7b120
+ext fingerprint ext:deb6e6c2928b970472f84540146c32b2:33636 (md5 over the 33,636 GA oleans in the 143 directories of tools/ext_modules.txt)
+ext_modules.txt md5 3e7df5242eb444ac34af8802d0df07e9
+validated on the build machine 2026-10-08 06:53-07:56 UTC (log/final.log, val_final_0654/ on the build machine, val/final/ on main):
+  V1 0 failures; V2 PASS (2,062,872 user-level constants); V3 PASS (2,756 roots); V4 18/18; smoke, target, probe, chain PASS;
+  ckr: the five chunk libraries byte-identical, FROZEN_L479 288/288, libnative.so b5f426018105
+  V5 pending: 187,578 chunks without fn=/sound=/src= (val/final/v5_chunks_without_template.tsv); re-run with tools/v5rerun.sh,
+  which checks MANIFEST_FULL.md5 and the ext fingerprint before running V5 alone
+snap.py, port.py, build.py, merge.py and sync_fleet.sh refuse to change this tree; snap/, src/, build/, tools/, patches/ are read-only.
+PORT_UNFREEZE=1 overrides (only on the coordinator's word).

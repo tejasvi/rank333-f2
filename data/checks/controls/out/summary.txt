@@ -1,0 +1,13 @@
+lader: SAT 
+pos0: SAT 
+pos1: SAT 
+pos2: SAT 
+pos3: SAT 
+pos4: SAT 
+pos5: SAT 
+pos6: SAT 
+pos7: SAT 
+pos8: SAT 
+pos9: SAT 
+pos10: SAT 
+pos11: SAT 

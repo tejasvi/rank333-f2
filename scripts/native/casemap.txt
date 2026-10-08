@@ -1,0 +1,7 @@
+# casemap.txt: queue pool -> native case, for nchk_auto.sh ("REGEX CASE"; first match wins).  Set the pool names for the run here.
+# Case II pools of the rerun (L479, --rord 123):
+^rerunH ii
+^pool[A-K] ii
+# Cases I / I13 (--rord 321): pool names to be fixed with the queue peer
+^rerunI13 i13
+^rerunI i

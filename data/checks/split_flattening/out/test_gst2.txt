@@ -1,0 +1,20 @@
+dec 0 side A d 1 ok
+dec 0 side B d 2 ok
+dec 0 side C d 1 ok
+dec 1 side A d 2 ok
+dec 1 side B d 1 ok
+dec 1 side C d 1 ok
+dec 2 side A d 1 ok
+dec 2 side B d 1 ok
+dec 2 side C d 1 ok
+dec 3 side A d 1 ok
+dec 3 side B d 2 ok
+dec 3 side C d 1 ok
+dec 4 side A d 2 ok
+dec 4 side B d 1 ok
+dec 4 side C d 3 ok
+dec 5 side A d 1 ok
+dec 5 side B d 1 ok
+dec 5 side C d 1 ok
+ok 18 sides
+rc=0

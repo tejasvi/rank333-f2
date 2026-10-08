@@ -1,0 +1,9 @@
+# 6.2: byte comparison of the port's 96-104 module files with infra's chunk libraries (tools/ckrcmp.py), the frozen L479
+# closure and the native library; from port/out/log/final.log (2026-10-08 07:55 UTC)
+ckr-6d6541a6a2c0: 100 identical, 0 differ, 15 not in ../val/ckr/ckr-6d6541a6a2c0, 0 of its 100 modules not in the port; md5sum over its MANIFEST paths: 6d6541a6a2c0
+ckr-6fae2d2db094: 98 identical, 0 differ, 17 not in ../val/ckr/ckr-6fae2d2db094, 0 of its 98 modules not in the port; md5sum over its MANIFEST paths: 6fae2d2db094
+ckr-800f4b8cdcce: 102 identical, 0 differ, 13 not in ../val/ckr/ckr-800f4b8cdcce, 0 of its 102 modules not in the port; md5sum over its MANIFEST paths: 800f4b8cdcce
+ckr-907071015dc3: 104 identical, 0 differ, 11 not in ../val/ckr/ckr-907071015dc3, 0 of its 104 modules not in the port; md5sum over its MANIFEST paths: 907071015dc3
+ckr-e07b8136b3c8: 96 identical, 0 differ, 19 not in ../val/ckr/ckr-e07b8136b3c8, 0 of its 96 modules not in the port; md5sum over its MANIFEST paths: e07b8136b3c8
+FROZEN_L479: 288/288 OK
+libnative.so b5f426018105, the ckrs': b5f426018105 b5f426018105 b5f426018105 b5f426018105 b5f426018105

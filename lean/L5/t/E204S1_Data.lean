@@ -1,0 +1,95 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import S7.NestT
+public import E1.E1Load
+@[expose] public section
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+#e1lits E204S1 "data/lean/57d8aa70484e6e9808b3ccf5e53fd653/E204S1.bin"
+namespace E204S1
+open BC7x
+/-- records `(path, sub-record count, certificate)`, BFS order of the record tree (sub-record ranges consecutive) -/
+noncomputable def recs : List (List Step × Nat × Nat) := [
+([(3, true, false, [], [], 0)], 0, E204S1.L1),
+([(3, true, false, [], [], 1)], 0, E204S1.L2),
+([(3, true, false, [], [], 4)], 0, E204S1.L3),
+([(3, true, false, [], [], 5)], 0, E204S1.L4),
+([(3, true, false, [], [], 7)], 0, E204S1.L5),
+([(3, true, false, [], [], 8)], 0, E204S1.L6),
+([(3, true, false, [], [], 12)], 0, E204S1.L7),
+([(3, true, false, [], [], 15)], 0, E204S1.L8),
+([(3, true, false, [], [], 23)], 0, E204S1.L9),
+([(3, true, false, [], [], 49)], 0, E204S1.L10),
+([(3, true, false, [], [], 51)], 0, E204S1.L11),
+([(3, true, false, [], [], 53)], 0, E204S1.L12),
+([(3, true, false, [], [], 55)], 0, E204S1.L13),
+([(3, true, false, [], [], 58)], 0, E204S1.L14),
+([(3, true, false, [], [], 62)], 0, E204S1.L15),
+([(3, true, false, [], [], 64)], 0, E204S1.L16),
+([(3, true, false, [], [], 66)], 0, E204S1.L17),
+([(3, true, false, [], [], 68)], 0, E204S1.L18),
+([(3, true, false, [], [], 71)], 0, E204S1.L19),
+([(3, true, false, [], [], 80)], 0, E204S1.L20),
+([(3, true, false, [], [], 82)], 0, E204S1.L21),
+([(3, true, false, [], [], 99)], 0, E204S1.L22),
+([(3, true, false, [], [], 100)], 0, E204S1.L23),
+([(3, true, false, [], [], 103)], 0, E204S1.L24),
+([(3, true, false, [], [], 104)], 0, E204S1.L25),
+([(3, true, false, [], [], 106)], 0, E204S1.L26),
+([(3, true, false, [], [], 107)], 0, E204S1.L27),
+([(3, true, false, [], [], 110)], 0, E204S1.L28),
+([(3, true, false, [], [], 118)], 0, E204S1.L29),
+([(3, true, false, [], [], 121)], 0, E204S1.L30),
+([(3, true, false, [], [], 154)], 0, E204S1.L31),
+([(3, true, false, [], [], 162)], 0, E204S1.L32),
+([(3, true, false, [], [], 164)], 0, E204S1.L33),
+([(3, true, false, [], [], 173)], 0, E204S1.L34),
+([(3, true, false, [], [], 371)], 0, E204S1.L35),
+([(3, true, false, [], [], 372)], 0, E204S1.L36),
+([(3, true, false, [], [], 375)], 0, E204S1.L37),
+([(3, true, false, [], [], 376)], 0, E204S1.L38),
+([(3, true, false, [], [], 383)], 0, E204S1.L39),
+([(3, true, false, [], [], 388)], 0, E204S1.L40),
+([(3, true, false, [], [], 394)], 0, E204S1.L41),
+([(3, true, false, [], [], 400)], 0, E204S1.L42),
+([(3, true, false, [], [], 595)], 0, E204S1.L43),
+([(3, true, false, [], [], 597)], 0, E204S1.L44),
+([(3, true, false, [], [], 599)], 0, E204S1.L45),
+([(3, true, false, [], [], 601)], 0, E204S1.L46),
+([(3, true, false, [], [], 608)], 0, E204S1.L47),
+([(3, true, false, [], [], 617)], 0, E204S1.L48),
+([(3, true, false, [], [], 626)], 0, E204S1.L49),
+([(3, true, false, [], [], 628)], 0, E204S1.L50),
+([(3, true, false, [], [], 645)], 0, E204S1.L51),
+([(3, true, false, [], [], 646)], 0, E204S1.L52),
+([(3, true, false, [], [], 649)], 0, E204S1.L53),
+([(3, true, false, [], [], 650)], 0, E204S1.L54),
+([(3, true, false, [], [], 656)], 0, E204S1.L55),
+([(3, true, false, [], [], 663)], 0, E204S1.L56),
+([(3, true, false, [], [], 667)], 0, E204S1.L57),
+([(3, true, false, [], [], 678)], 0, E204S1.L58),
+([(3, true, false, [], [], 693)], 0, E204S1.L59),
+([(3, true, false, [], [], 695)], 0, E204S1.L60),
+([(3, true, false, [], [], 697)], 0, E204S1.L61),
+([(3, true, false, [], [], 699)], 0, E204S1.L62),
+([(3, true, false, [], [], 708)], 0, E204S1.L63),
+([(3, true, false, [], [], 710)], 0, E204S1.L64),
+([(3, true, false, [], [], 740)], 0, E204S1.L65),
+([(3, true, false, [], [], 746)], 0, E204S1.L66),
+([(3, true, false, [], [], 1044)], 0, E204S1.L67),
+([(3, true, false, [], [], 1047)], 0, E204S1.L68),
+([(3, true, false, [], [], 1060)], 0, E204S1.L69),
+([(3, true, false, [], [], 1105)], 0, E204S1.L70),
+([(3, true, false, [], [], 1394)], 0, E204S1.L71),
+([(3, true, false, [], [], 1398)], 0, E204S1.L72),
+([(3, true, false, [], [], 1401)], 0, E204S1.L73),
+([(3, true, false, [], [], 1408)], 0, E204S1.L74),
+([(3, true, false, [], [], 1419)], 0, E204S1.L75),
+([(3, true, false, [], [], 1437)], 0, E204S1.L76),
+([(3, true, false, [], [], 1440)], 0, E204S1.L77),
+([(3, true, false, [], [], 1455)], 0, E204S1.L78)
+]
+noncomputable def paths : List (List Step) := recs.map Prod.fst
+/-- the main record's external subtrees are records `0 .. m0-1` -/
+def m0 : Nat := 78
+end E204S1

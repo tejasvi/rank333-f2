@@ -1,0 +1,26 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import E1.C394X_W
+@[expose] public section
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+namespace E1.C394X
+open E1S
+theorem okB6767 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 1 = true := by decide +kernel
+theorem okB6768 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6768 1 = true := by decide +kernel
+theorem okB6769 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6769 1 = true := by decide +kernel
+theorem okB6770 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6770 1 = true := by decide +kernel
+theorem okB6771 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6771 1 = true := by decide +kernel
+theorem okB6772 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6772 1 = true := by decide +kernel
+theorem okB6773 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6773 1 = true := by decide +kernel
+theorem okG645 : glueChkR lits W 6767 7 = true := by decide +kernel
+theorem okM645 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 7 = true := by
+  have h0 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 1 = true := okB6767
+  have h1 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 2 = true := blkChk_join _ _ _ _ _ 6767 1 1 h0 okB6768
+  have h2 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 3 = true := blkChk_join _ _ _ _ _ 6767 2 1 h1 okB6769
+  have h3 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 4 = true := blkChk_join _ _ _ _ _ 6767 3 1 h2 okB6770
+  have h4 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 5 = true := blkChk_join _ _ _ _ _ 6767 4 1 h3 okB6771
+  have h5 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 6 = true := blkChk_join _ _ _ _ _ 6767 5 1 h4 okB6772
+  have h6 : blkChk E1.IP_e394.C E1.SL_e394.entry E1.IP_e394.UB E1.IP_e394.UBR lits 6767 7 = true := blkChk_join _ _ _ _ _ 6767 6 1 h5 okB6773
+  exact h6
+end E1.C394X

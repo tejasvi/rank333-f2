@@ -1,0 +1,11 @@
+OK  R22B.FinalMain: rc 0, 8 s, 6.1 GB; 12305 modules outside Init/Std/Lean/Lake; G.R3.* 0; G.Main/G.AccProof []; crown subtrees (E1.E<c>, E1.C<c>*, L5.t.*) 0; #print axioms R22B.final_main: [propext, Classical.choice, Quot.sound]
+OK  R22B.GramCrown: rc 0, 3 s, 4.0 GB; 1254 modules outside Init/Std/Lean/Lake; G.R3.* 0; G.Main/G.AccProof []; crown subtrees (E1.E<c>, E1.C<c>*, L5.t.*) 0; #print axioms R22B.GramCrown.g175: [propext, Classical.choice, Quot.sound]
+OK  R22B.CapLeaf: rc 0, 8 s, 5.5 GB; 13490 modules outside Init/Std/Lean/Lake; G.R3.* 0; G.Main/G.AccProof []; crown subtrees (E1.E<c>, E1.C<c>*, L5.t.*) 0; #print axioms R22B.CapLeaf.hCap: [propext, Classical.choice, Quot.sound]
+OK  R22B.FinalAcc: rc 0, 8 s, 6.1 GB; 12357 modules outside Init/Std/Lean/Lake; G.R3.* 0; G.Main/G.AccProof []; crown subtrees (E1.E<c>, E1.C<c>*, L5.t.*) 0; #print axioms R22B.final_acc: [propext, Classical.choice, Quot.sound]
+OK  G.Main: rc 0, 8 s, 4.8 GB; 12335 modules outside Init/Std/Lean/Lake; G.R3.* 3682; G.Main/G.AccProof [G.Main,; #print axioms G.Main.noFam_17_5_0: [propext, Classical.choice, Quot.sound]
+OK  R22B.FinalRun: rc 0, 8 s, 6.9 GB; 12573 modules outside Init/Std/Lean/Lake; G.R3.* 0; G.Main/G.AccProof []; crown subtrees (E1.E<c>, E1.C<c>*, L5.t.*) 0; #print axioms R22B.FinalRun.rankGe23_cases: [propext,
+ Classical.choice,
+ Quot.sound,
+ _private.NC_rerunH_poolC_poolD_d12_000_1019411_5.0.NC_rerunH_poolC_poolD_d12_000_1019411_5.thm.nd._native.native_decide.ax_1,
+ _private.NC_rerunH_poolC_poolD_ … (60274 axioms)]
+OK  R22B.FinalTop: rc 0, 8 s, 7.2 GB; 14764 modules outside Init/Std/Lean/Lake; G.R3.* 0; G.Main/G.AccProof []; crown subtrees (E1.E<c>, E1.C<c>*, L5.t.*) 0; axioms: see V5

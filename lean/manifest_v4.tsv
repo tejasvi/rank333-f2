@@ -1,0 +1,19 @@
+# module	md5 (ported source)	expected rc	local imports	patch	note
+R22V4.KX_neg_clean	4d90498ce95b90988dfc4b65ff5d8a53	0	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: clean input, accepted
+R22V4.KX_neg_crow	54d9267496c7511408a6e3d4065f1f00	1	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: corrupted input, kernel rejects
+R22V4.KX_neg_cz1	5214f49a6989eb1493bfffdb5a160d9f	1	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: corrupted input, kernel rejects
+R22V4.KX_neg_cz2	87cc42189cc963ff8e0760a3f1c06c5c	1	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: corrupted input, kernel rejects
+R22V4.KX_neg_fu	1a2aabb76b416915cda766c362cb790d	1	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: corrupted input, kernel rejects
+R22V4.KX_neg_nrow	3016d680dd9f121a74fb78596a92b540	1	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: corrupted input, kernel rejects
+R22V4.KX_neg_step	304a8e071482fd3044c997b1acb4d6f6	1	R22Port.U_d41d8cd98f00 KD.LoadX	-	kinds #kdxnode control: corrupted input, kernel rejects
+R22V4.KX_cut_00000	e5bad1620b0c4bdf57deb2364849a1e7	0	R22Port.U_d41d8cd98f00 R3RT.TabC3eD L1.HypTables KD.LoadXB R3RT.Rows3eD	-	kinds KD.batchX sample (#kdbatchXn): accepted
+R22V4.KX_cut_00001	0c2f39772ade1fbe6d583dd2fd4a529c	0	R22Port.U_d41d8cd98f00 R3RT.TabC3eD L1.HypTables KD.LoadXB R3RT.Rows3eD	-	kinds KD.batchX sample (#kdbatchXn): accepted
+R22V4.KX_cutbad_00000	08bffa098b6eb2b4e462fcaf4e906eaa	1	R22Port.U_d41d8cd98f00 R3RT.TabC3eD L1.HypTables KD.LoadXB R3RT.Rows3eD	-	kinds KD.batchX sample (#kdbatchXn): corrupted batch, kernel rejects
+R22V4.KX_pj_H3_H76794_00000	37f43337e5df1efbbc018b49d6d15ac7	0	R22Port.U_d41d8cd98f00 R3RT.TabC3eD L1.HypTables KD.LoadXB R3RT.Rows3eD	-	kinds KD.batchX sample (#kdbatchXn): accepted
+R22V4.KX_pj_C0_C305157_b10_00000	d3ae189d50df14e9adbcde40829fa22e	0	R22Port.U_d41d8cd98f00 R3RT.TabC3eD L1.HypTables KD.LoadXB R3RT.Rows3eD	-	kinds KD.batchX sample (#kdbatchXn): accepted
+R22V4.AB_c150	5d16712579f00189bb7fe0c693177228	0	R22Port.U_6050cb77ad13 BC4Tables BC6Tables BC7Tables BranchCheck6 BranchCheck7	-	leaf2 leaf-checker sample (BranchCheck6/7, #eval)
+R22V4.AB_l490	e3dd1f3cc9d983d258c993e34f86f3f2	0	R22Port.U_6050cb77ad13 BC4Tables BC6Tables BC7Tables BranchCheck6 BranchCheck7	-	leaf2 leaf-checker sample (BranchCheck6/7, #eval)
+R22V4.AB_p454	6ca2eecebbb87cec9c0f43e6dbc9a9bd	0	R22Port.U_6050cb77ad13 BC4Tables BC6Tables BC7Tables BranchCheck6 BranchCheck7	-	leaf2 leaf-checker sample (BranchCheck6/7, #eval)
+R22V4.AB_split490	cdbe9f48271d42a2f4d34ca2f84ceebf	0	R22Port.U_6050cb77ad13 BC4Tables BC6Tables BC7Tables BranchCheck6 BranchCheck7	-	leaf2 leaf-checker sample (BranchCheck6/7, #eval)
+R22V4.HC_G7K	a3d65a8ae92a60229c6f3da0228cb20d	0	R22Port.U_d41d8cd98f00 BC7Tables BranchCheck7	-	hcls gen7 certificates, decide +kernel: accepted
+R22V4.HC_G7KNeg	91bf7719b471b9cb9c7cec9e023c0878	1	R22Port.U_d41d8cd98f00 BC7Tables BranchCheck7	-	hcls gen7 certificates, one corrupted: decide proves it false

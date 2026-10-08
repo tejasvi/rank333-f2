@@ -1,0 +1,37 @@
+module
+public import R22Port.U_d41d8cd98f00
+public import NLP.E1Hook
+public import NLP.Split
+public import NLP.E1Ext
+/-! # NLP.Ax: axioms of the native leaf refinement theorems (expected: `[propext, Classical.choice, Quot.sound]`) -/
+@[expose] public section
+#print axioms NL.checkS_sim
+#print axioms NL.cert_sim
+#print axioms NL.leafAt_sound
+#print axioms NL.leafAt_noDecomp
+#print axioms NL.allLeaves_sound
+#print axioms NL.leafCertW_sound
+#print axioms NL.leafS_form
+#print axioms NL.e1_leaf
+#print axioms NL.e1g_leaf
+#print axioms NL.e1p_leaf
+#print axioms NL.checkSX_sim
+#print axioms NL.walk_rel
+#print axioms NL.mainRec_sound
+#print axioms NL.subRec_sound
+#print axioms NL.mainRec_ref
+#print axioms NL.subRec_ref
+#print axioms NL.nestLeaf_sound
+#print axioms NL.leafAtW_sound
+#print axioms NL.leafAtW_noDecomp
+#print axioms NL.leafAt_blob_sound
+#print axioms NL.leafN_win
+#print axioms NL.aT_leafT_win
+#print axioms NL.aT_leafT_win'
+#print axioms NL.leafDom6_win
+#print axioms NL.e1Hdr_rec
+#print axioms NL.e1Split_leafND
+#print axioms NL.e1ExtSplitB_sound
+#print axioms NL.e1ExtMonoB_sound
+#print axioms NL.e1Ext_hext
+#print axioms NL.e1Ext_join

@@ -1,0 +1,1 @@
+axallow args: --t6 <infra>/run/gates/t6/full_out/keys_t6.tsv --liballow <infra>/run/agg/liballow_final.txt

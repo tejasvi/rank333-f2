@@ -1,0 +1,22 @@
+V4 PASS: 18/18 tests behave as expected in both worlds (accepts stay accepts, rejects stay rejects, same errors)
+
+| test | expected | old rc | new rc | old s | new s | errors | note |
+|---|---|---|---|---|---|---|---|
+| KX_neg_clean | accept | 0 | 0 | 9 | 14 | same:  | kinds #kdxnode control: clean input, accepted |
+| KX_neg_crow | reject | 1 | 1 | 10 | 15 | same: xc#_#: kernel rejects: (kernel) declaration type mismatch, 'xc#_#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_cz1 | reject | 1 | 1 | 11 | 17 | same: xn#: kernel rejects: (kernel) declaration type mismatch, 'xn#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_cz2 | reject | 1 | 1 | 11 | 17 | same: xn#: kernel rejects: (kernel) declaration type mismatch, 'xn#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_fu | reject | 1 | 1 | 10 | 16 | same: xc#_#: kernel rejects: (kernel) declaration type mismatch, 'xc#_#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_nrow | reject | 1 | 1 | 12 | 17 | same: xn#: kernel rejects: (kernel) declaration type mismatch, 'xn#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_neg_step | reject | 1 | 1 | 10 | 15 | same: xc#_#: kernel rejects: (kernel) declaration type mismatch, 'xc#_#' has type | kinds #kdxnode control: corrupted input, kernel rejects |
+| KX_cut_00000 | accept | 0 | 0 | 72 | 69 | same:  | kinds KD.batchX sample (#kdbatchXn): accepted |
+| KX_cut_00001 | accept | 0 | 0 | 71 | 81 | same:  | kinds KD.batchX sample (#kdbatchXn): accepted |
+| KX_cutbad_00000 | reject | 1 | 1 | 49 | 52 | same: KXB.r#: kernel rejects: (kernel) declaration type mismatch, 'KXB.r#' has type | kinds KD.batchX sample (#kdbatchXn): corrupted batch, kernel rejects |
+| KX_pj_H3_H76794_00000 | accept | 0 | 0 | 14 | 16 | same:  | kinds KD.batchX sample (#kdbatchXn): accepted |
+| KX_pj_C0_C305157_b10_00000 | accept | 0 | 0 | 12 | 13 | same:  | kinds KD.batchX sample (#kdbatchXn): accepted |
+| AB_c150 | accept | 0 | 0 | 97 | 99 | same:  | leaf2 leaf-checker sample (BranchCheck6/7, #eval) |
+| AB_l490 | accept | 0 | 0 | 12 | 12 | same:  | leaf2 leaf-checker sample (BranchCheck6/7, #eval) |
+| AB_p454 | accept | 0 | 0 | 88 | 88 | same:  | leaf2 leaf-checker sample (BranchCheck6/7, #eval) |
+| AB_split490 | accept | 0 | 0 | 12 | 12 | same:  | leaf2 leaf-checker sample (BranchCheck6/7, #eval) |
+| HC_G7K | accept | 0 | 0 | 13 | 12 | same:  | hcls gen7 certificates, decide +kernel: accepted |
+| HC_G7KNeg | reject | 1 | 1 | 26 | 26 | same: Tactic `decide` proved that the proposition | hcls gen7 certificates, one corrupted: decide proves it false |
